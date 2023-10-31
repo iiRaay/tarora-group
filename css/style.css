@@ -11714,7 +11714,7 @@ body {
     font-size: 18px;
     line-height: 1.8;
     font-weight: 300;
-    color: #a6a6a6;
+    color: rgba(0, 0, 0, 0.75);
 }
 
 body.menu-show {
@@ -11725,7 +11725,7 @@ body.menu-show {
 }
 
 span {
-    color: #bfbfbf;
+    color: #000000;
 }
 
 a {
@@ -12123,7 +12123,7 @@ h5,
 }
 
 .hero-wrap .slider-text {
-    color: rgba(0, 0, 0, 0.4);
+    color: rgba(0, 0, 0, 0.75);
 }
 
 .hero-wrap .slider-text .icon {
