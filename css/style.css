@@ -11763,9 +11763,9 @@ h5,
 }
 
 .ftco-navbar-light {
-    background: transparent !important;
+    background: #fff !important;
     position: absolute;
-    top: 10px;
+    top: 0px;
     left: 0;
     right: 0;
     z-index: 3;
@@ -13975,4 +13975,44 @@ textarea.form-control {
         stroke-dasharray: 89, 200;
         stroke-dashoffset: -136px;
     }
+}
+
+/* Customize carousel control arrows */
+#carouselServices .carousel-control-prev-icon,
+#carouselServices .carousel-control-next-icon {
+    filter: invert(100%);
+    /* Change arrow color to black */
+}
+
+/* Optional: Adjust arrow size and other styles if needed */
+#carouselServices .carousel-control-prev,
+#carouselServices .carousel-control-next {
+    width: 30px;
+    /* Adjust arrow width */
+    height: 30px;
+    /* Adjust arrow height */
+    opacity: 1;
+    /* Adjust arrow opacity */
+
+    /* Center arrows vertically using Flexbox */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    /* Account for padding */
+    top: 50%;
+    /* Center vertically */
+    transform: translateY(-50%);
+    /* Adjust position */
+}
+
+/* Optional: Adjust arrow position */
+#carouselServices .carousel-control-prev {
+    left: 0;
+    /* Adjust left arrow position */
+}
+
+#carouselServices .carousel-control-next {
+    right: 0;
+    /* Adjust right arrow position */
 }
