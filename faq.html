@@ -1,9 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>Energen - Free Bootstrap 4 Template by Colorlib</title>
+    <title>Tarora Rejuvenation</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="icon" href="images/logo-bw.png" type="image/png">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Prata&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/open-iconic-bootstrap.min.css">
@@ -20,7 +21,8 @@
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <!-- ... [navigation remains the same] ... -->
+
+    <!-- Navbar -->
     <nav class="navbar navbar-expand-lg navbar-dark ftco_navbar bg-dark ftco-navbar-light" id="ftco-navbar">
         <div class="container">
             <a class="navbar-brand" href="index.html">
@@ -34,7 +36,7 @@
                     <li class="nav-item"><a href="index.html" class="nav-link">Home</a></li>
                     
                     <!-- Treatments Dropdown -->
-                    <li class="nav-item dropdown active">
+                    <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownTreatments" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                             Treatments
                         </a>
@@ -85,44 +87,136 @@
                         </ul>
                     </li>
                     <li class="nav-item"><a href="specialists.html" class="nav-link">Our Team</a></li>
-                    <li class="nav-item"><a href="faq.html" class="nav-link">FAQ</a></li>
+                    <li class="nav-item active"><a href="faq.html" class="nav-link">FAQ</a></li>
                     <li class="nav-item"><a href="contact.html" class="nav-link">About & Consultation</a></li>
                 </ul>
             </div>
         </div>
     </nav>
-    <!-- Botox Treatment Section -->
-    <section class="hero-wrap hero-wrap-2" style="background-image: url('images/botox-treatment.jpg');" data-stellar-background-ratio="0.5">
-        <div class="overlay"></div>
-        <div class="container">
-            <div class="row no-gutters slider-text js-fullheight align-items-center justify-content-center">
-                <div class="col-md-9 ftco-animate text-center">
-                    <h1 class="mb-3 bread">Botox Treatment</h1>
-                </div>
-            </div>
-        </div>
-    </section>
 
-    <!-- Botox Description Section -->
-    <section class="ftco-section ftco-intro">
+    <!-- FAQ Section -->
+    <section class="ftco-section">
         <div class="container">
-            <div class="row justify-content-between">
-                <div class="col-md-5">
-                    <div class="heading-section ftco-animate">
-                        <h2 class="mb-4">Botox: The Miracle of Modern Aesthetics</h2>
+            <div class="row justify-content-center">
+                <div class="col-md-8">
+                    <div class="heading-section text-center ftco-animate">
+                        <h2 class="mb-4">Frequently Asked Questions</h2>
                     </div>
-                    <p class="ftco-animate">
-                       Have you ever wondered why so many of your friends aren't showing their age? Botox might be the reason. Similar to injectable fillers; which restore volume under the skin, botox is a type of protein that works by relaxing the tiny facial muscles that contract and cause facial lines/creases. When administered by our skilled injector, Botox fixes these wrinkles and lines, allowing them to smooth out more gradually which produces a more youthful look. Call us today for a consultation and see if Botox is right for you!
-                    </p>
-                    <!-- Additional content can go here -->
-                </div>
-                <div class="col-md-6">
-                    <img src="images/treatment-images/botox.jpg" alt="Botox Image" class="img-fluid">
+                    <div id="faqAccordion">
+
+                        <!-- Question 1 -->
+                        <div class="card">
+                            <div class="card-header btn" id="headingTwo" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo" style="cursor: pointer;">
+                                <h5 class="mb-0">
+                                    <button class="btn btn-link" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                        How do I go about inquiring about a service or scheduling an appointment?
+                                    </button>
+                                </h5>
+                            </div>
+                            <div id="collapseOne" class="collapse show  " aria-labelledby="headingOne" data-parent="#faqAccordion">
+                                <div class="card-body">
+                                    You may contact us by dialling (403) 910-1741 or sending a direct message via Instagram to inquire about our services or to book an appointment.
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Question 2 -->
+                        <div class="card">
+                            <div class="card-header btn" id="headingTwo" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo" style="cursor: pointer;">
+                                <h5 class="mb-0">
+                                    <button class="btn btn-link" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                        Can I trust the safety of your treatments?
+                                    </button>
+                                </h5>
+                            </div>
+                            <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#faqAccordion">
+                                <div class="card-body">
+                                    Yes, at our cosmetic aesthetics clinic, we prioritize the safety of our clients. Skilled and qualified professionals conduct our treatments, and we adhere to strict safety standards. If you have any specific questions or concerns about the safety of our cosmetic procedures, please don't hesitate to contact our clinic, and our team will be happy to provide you with detailed information.
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Question 3 -->
+                        <div class="card">
+                            <div class="card-header btn" id="headingThree" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree" style="cursor: pointer;">
+                                <h5 class="mb-0">
+                                    <button class="btn btn-link" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                        How long do the results of treatments last?
+                                    </button>
+                                </h5>
+                            </div>
+                            <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#faqAccordion">
+                                <div class="card-body">
+                                    The duration of results for our cosmetic treatments, including HydraFacial, dermal fillers, and Botox, can vary. HydraFacial results may be noticeable immediately and can last for several weeks. Dermal fillers typically provide results that can last anywhere from six months to two years, depending on the type of filler used. Botox results are temporary and may last three to six months.
+                                    <br>
+                                    It's important to note that individual responses to treatments can vary, and factors such as skin type, lifestyle, and treatment specifics can influence the duration of results. During your consultation, our skilled practitioners will discuss the expected longevity of each treatment, ensuring you have a clear understanding of what to expect and can make informed decisions based on your aesthetic goals.
+
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Question 4 -->
+                        <div class="card">
+                            <div class="card-header btn" id="headingFour" data-toggle="collapse" data-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour" style="cursor: pointer;">
+                                <h5 class="mb-0">
+                                    <button class="btn btn-link" data-toggle="collapse" data-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                                        What is the recovery time or downtime associated with the treatments?
+
+                                    </button>
+                                </h5>
+                            </div>
+                            <div id="collapseFour" class="collapse" aria-labelledby="headingFour" data-parent="#faqAccordion">
+                                <div class="card-body">
+                                    The downtime after our cosmetic treatments varies depending on the specific procedure. For HydraFacial, there is typically little to no downtime, and you can resume your daily activities immediately. Dermal filler treatments may involve some swelling or bruising, with downtime ranging from a few hours to a few days. Botox injections usually have minimal downtime, and most individuals can return to their regular routines right away.
+                                    <br>
+                                    It's important to note that individual responses to treatments can vary, and our practitioners will provide personalized post-treatment care instructions during your consultation. These guidelines will help minimize potential downtime and ensure a comfortable and smooth recovery process tailored to your needs.
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Question 5 -->
+                        <div class="card">
+                            <div class="card-header btn" id="headingFive" data-toggle="collapse" data-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive" style="cursor: pointer;">
+                                <h5 class="mb-0">
+                                    <button class="btn btn-link" data-toggle="collapse" data-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+                                        Is there any discomfort associated with the treatments?
+                                    </button>
+                                </h5>
+                            </div>
+                            <div id="collapseFive" class="collapse" aria-labelledby="headingFive" data-parent="#faqAccordion">
+                                <div class="card-body">
+                                    Patient experiences with discomfort during our cosmetic treatments vary. For procedures like HydraFacial, patients often report minimal discomfort, if any. Dermal filler treatments may involve some mild discomfort, typically alleviated with the use of a topical anesthetic or numbing cream. Botox injections are generally well-tolerated, causing only minor, brief discomfort.
+                                    <br>
+                                    Our experienced practitioners prioritize patient comfort and will discuss pain management options during the consultation. If you have specific concerns about pain or discomfort, please feel free to discuss them with our team, and we will work to ensure your experience is as comfortable as possible.
+    
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Question 6 -->
+                        <div class="card">
+                            <div class="card-header btn" id="headingSix" data-toggle="collapse" data-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix" style="cursor: pointer;">
+                                <h5 class="mb-0">
+                                    <button class="btn btn-link" data-toggle="collapse" data-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
+                                    What is the best way to determine which treatment is most suitable for my needs?
+                                    </button>
+                                </h5>
+                            </div>
+                            <div id="collapseSix" class="collapse" aria-labelledby="headingSix" data-parent="#faqAccordion">
+                                <div class="card-body">
+                                    Selecting the right treatment for your needs involves a personalized assessment, and our experienced team is here to guide you. During a consultation, our practitioners will evaluate your unique aesthetic goals, skin type, and any specific concerns you may have. We'll discuss various treatment options, explaining their benefits and potential outcomes.
+                                    <br>
+                                    By understanding your preferences and considering factors such as desired results, budget, and any existing medical conditions, we can recommend a tailored treatment plan that aligns with your objectives. Feel free to ask questions during the consultation to ensure you have a comprehensive understanding of the recommended treatments and can make an informed decision based on your individual needs
+
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
                 </div>
             </div>
         </div>
     </section>
-
     <footer class="ftco-footer ftco-section">
         <div class="container">
             <div class="row d-flex">
@@ -133,21 +227,9 @@
                         <ul class="ftco-footer-social list-unstyled float-lft mt-3">
                             <li class="ftco-animate"><a href="https://www.facebook.com/tarorarejuvenation/"><span class="icon-facebook"></span></a></li>
                             <li class="ftco-animate"><a href="https://www.instagram.com/tarorarejuvenation/"><span class="icon-instagram"></span></a></li>
-                            <li class="ftco-animate"><a href="https://www.instagram.com/tarorarejuvenation/"><span class="fa-tiktok"></span></a></li>
                         </ul>
                     </div>
                 </div>
-                <!-- <div class="col-md">
-                <div class="ftco-footer-widget mb-4 ml-md-4">
-                    <h2 class="ftco-heading-2">Popular Links</h2>
-                    <ul class="list-unstyled">
-                        <li><a href="#">Aromatheraphy</a></li>
-                        <li><a href="#">Skin Care</a></li>
-                        <li><a href="#">Herbal Spa</a></li>
-                        <li><a href="#">Body Massage</a></li>
-                    </ul>
-                </div>
-            </div> -->
                 <div class="col-md">
                     <div class="ftco-footer-widget mb-4">
                         <h2 class="ftco-heading-2">Quick Links</h2>
@@ -165,11 +247,8 @@
                         <h2 class="ftco-heading-2">Have a Questions?</h2>
                         <div class="block-23 mb-3">
                             <ul>
-                                <li>
-                                    <span class="icon icon-map-marker"></span><span class="text">
-                                        50 Nolanridge Ct NW #140, Calgary, AB T3R 1W7
-                                    </span>
-                                </li>
+                                <li><span class="icon icon-map-marker"></span><span class="text">
+                                        50 Nolanridge Ct NW #140, Calgary, AB T3R 1W7</span></li>
                                 <li><a href="#"><span class="icon icon-phone"></span><span class="text">(403) 910-1741</span></a></li>
                                 <li><a href="#"><span class="icon icon-envelope"></span><span class="text">tarorarejuvenation@gmail.com</span></a></li>
                             </ul>
@@ -181,9 +260,8 @@
                 <div class="col-md-12 text-center">
                     <p class="mb-0">
                         <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-                        Copyright &copy;
-                        <script>
-                            document.write(new Date().getFullYear());
+                        Copyright &copy;<script>
+                        document.write(new Date().getFullYear());
                         </script> All rights reserved | This template is made with <i class="icon-heart" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">Colorlib</a>
                         <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
                     </p>
@@ -192,12 +270,9 @@
         </div>
     </footer>
     <!-- loader -->
-    <div id="ftco-loader" class="show fullscreen">
-        <svg class="circular" width="48px" height="48px">
+    <div id="ftco-loader" class="show fullscreen"><svg class="circular" width="48px" height="48px">
             <circle class="path-bg" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke="#eeeeee" />
-            <circle class="path" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke-miterlimit="10" stroke="#F96D00" />
-        </svg>
-    </div>
+            <circle class="path" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke-miterlimit="10" stroke="#F96D00" /></svg></div>
     <script src="js/jquery.min.js"></script>
     <script src="js/jquery-migrate-3.0.1.min.js"></script>
     <script src="js/popper.min.js"></script>
@@ -212,9 +287,10 @@
     <script src="js/bootstrap-datepicker.js"></script>
     <script src="js/jquery.timepicker.min.js"></script>
     <script src="js/scrollax.min.js"></script>
-    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDY1ABMYkelKhsNxvWGnMF2Ie3LXOXf4ss&callback=initMap" defer></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBVWaKrjvy3MaE7SQ74_uJiULgl1JY0H2s&sensor=false"></script>
     <script src="js/google-map.js"></script>
     <script src="js/main.js"></script>
+    <script src="js/getFooter.js"></script>
     <script>
     document.addEventListener('DOMContentLoaded', function () {
         var submenus = document.querySelectorAll('.dropdown-submenu');
