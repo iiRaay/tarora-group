@@ -181,5 +181,54 @@
     <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDY1ABMYkelKhsNxvWGnMF2Ie3LXOXf4ss&callback=initMap" defer></script>
     <script src="js/google-map.js"></script>
     <script src="js/main.js"></script>
+    <script>
+    document.addEventListener('DOMContentLoaded', function () {
+        var submenus = document.querySelectorAll('.dropdown-submenu');
+
+        // Function to close all submenus
+        function closeAllSubmenus() {
+            document.querySelectorAll('.dropdown-submenu .dropdown-menu').forEach(function (submenu) {
+                submenu.style.display = 'none';
+            });
+        }
+
+        submenus.forEach(function (submenu) {
+            var dropdownToggle = submenu.querySelector('.dropdown-toggle');
+            var dropdownMenu = submenu.querySelector('.dropdown-menu');
+
+            // Handle mouse enter on submenu
+            submenu.addEventListener('mouseenter', function () {
+                dropdownMenu.style.display = 'block';
+            });
+
+            // Handle mouse leave on submenu
+            submenu.addEventListener('mouseleave', function (event) {
+                // Check if the new hovered element is not a child of the submenu
+                if (!submenu.contains(event.relatedTarget)) {
+                    dropdownMenu.style.display = 'none';
+                }
+            });
+
+            // Handle click on submenu toggle
+            dropdownToggle.addEventListener('click', function (event) {
+                event.preventDefault(); // Prevent navigating to '#'
+                if (dropdownMenu.style.display === 'block') {
+                    dropdownMenu.style.display = 'none';
+                } else {
+                    closeAllSubmenus(); // Close other open submenus
+                    dropdownMenu.style.display = 'block';
+                }
+            });
+        });
+
+        // Close submenus when clicking elsewhere on the page
+        document.addEventListener('click', function (event) {
+            var isClickInsideSubmenu = event.target.closest('.dropdown-submenu');
+            if (!isClickInsideSubmenu) {
+                closeAllSubmenus();
+            }
+        });
+    });
+    </script>
 </body>
 </html>
