@@ -62,7 +62,7 @@
                     <li class="nav-item active"><a href="index.html" class="nav-link">Home</a></li>
                     <!-- Treatments Dropdown -->
                     <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownTreatments" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownTreatments" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" data-delay="1000">
                             Treatments
                         </a>
                         <ul class="dropdown-menu" aria-labelledby="navbarDropdownTreatments" style="position: absolute;">
@@ -397,6 +397,17 @@
     <script src="js/google-map.js"></script>
     <script src="js/main.js"></script>
     <script src="js/getFooter.js"></script>
+    <script>
+    document.querySelectorAll('.dropdown').forEach(function(dropdown) {
+        dropdown.addEventListener('mouseenter', function() {
+            this.classList.add('show');
+        });
+
+        dropdown.addEventListener('mouseleave', function() {
+            this.classList.remove('show');
+        });
+    });
+    </script>
     <script>
     document.addEventListener('DOMContentLoaded', function() {
         var submenus = document.querySelectorAll('.dropdown-submenu');
