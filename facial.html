@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <title>Tarora Rejuvenation</title>
     <meta charset="utf-8">
@@ -19,11 +20,12 @@
     <link rel="stylesheet" href="css/icomoon.css">
     <link rel="stylesheet" href="css/style.css">
 </head>
+
 <body>
     <!-- ... [navigation remains the same] ... -->
     <nav class="navbar navbar-expand-lg navbar-dark ftco_navbar bg-dark ftco-navbar-light" id="ftco-navbar">
         <div class="container">
-            <a class="navbar-brand" href="index.html">
+            <a class="navbar-brand" href="/">
                 <!-- <span class="flaticon-lotus"></span> -->
                 <img src="images/logo-bw-black.png" width="200px" height="65px" />
             </a>
@@ -32,7 +34,7 @@
             </button>
             <div class="collapse navbar-collapse" id="ftco-nav">
                 <ul class="navbar-nav ml-auto">
-                    <li class="nav-item active"><a href="index.html" class="nav-link">Home</a></li>
+                    <li class="nav-item active"><a href="/" class="nav-link">home</a></li>
                     <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownTreatments" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" data-delay="500">
                             Treatments
@@ -65,7 +67,6 @@
             </div>
         </div>
     </section>
-
     <!-- Botox Description Section -->
     <section class="ftco-section ftco-intro">
         <div class="container">
@@ -75,10 +76,7 @@
                         <h2 class="mb-4">Facials: The Gateway to Radiant Skin</h2>
                     </div>
                     <p class="ftco-animate">
-                       Our specialized acne facial is your ultimate ally against even the most stubborn acne issues. We begin with a gentle yet thorough skin cleansing, setting the stage for a transformative experience. Next, we introduce PCA’s detox deep pore treatment, followed by a soothing steam session to prepare your skin for the journey ahead. The real magic happens with our blue light therapy, a well-established method for combating acne breakouts. Blue light’s distinctive wavelength possesses potent antimicrobial properties, effectively eradicating the acne-causing bacteria that can lurk within your pores and oil glands. But the benefits don’t stop there, blue light therapy also helps prevent premature aging. Additionally, its anti-inflammatory properties work to reduce redness and alleviate other common acne symptoms you might face. We wrap up your Acne Solutions Facial with a curated selection of our custom serums, expertly formulated to target and soothe acne-prone skin. Experience the transformation to clearer, healthier skin and schedule YOUR treatment TODAY!
-
-
-
+                        Our specialized acne facial is your ultimate ally against even the most stubborn acne issues. We begin with a gentle yet thorough skin cleansing, setting the stage for a transformative experience. Next, we introduce PCA’s detox deep pore treatment, followed by a soothing steam session to prepare your skin for the journey ahead. The real magic happens with our blue light therapy, a well-established method for combating acne breakouts. Blue light’s distinctive wavelength possesses potent antimicrobial properties, effectively eradicating the acne-causing bacteria that can lurk within your pores and oil glands. But the benefits don’t stop there, blue light therapy also helps prevent premature aging. Additionally, its anti-inflammatory properties work to reduce redness and alleviate other common acne symptoms you might face. We wrap up your Acne Solutions Facial with a curated selection of our custom serums, expertly formulated to target and soothe acne-prone skin. Experience the transformation to clearer, healthier skin and schedule YOUR treatment TODAY!
                     </p>
                     <!-- Additional content can go here -->
                 </div>
@@ -88,7 +86,6 @@
             </div>
         </div>
     </section>
-
     <footer class="ftco-footer ftco-section">
         <div class="container">
             <div class="row d-flex">
@@ -120,7 +117,6 @@
                         <ul class="list-unstyled">
                             <li><a href="#about-section">About</a></li>
                             <li><a href="#">Our Spa</a></li>
-                            
                             <li><a href="specialists.html">Specialists</a></li>
                             <li><a href="contact.html">Contact</a></li>
                         </ul>
@@ -179,27 +175,27 @@
     <script src="js/google-map.js"></script>
     <script src="js/main.js"></script>
     <script>
-    document.addEventListener('DOMContentLoaded', function () {
+    document.addEventListener('DOMContentLoaded', function() {
         var submenus = document.querySelectorAll('.dropdown-submenu');
 
         // Function to close all submenus
         function closeAllSubmenus() {
-            document.querySelectorAll('.dropdown-submenu .dropdown-menu').forEach(function (submenu) {
+            document.querySelectorAll('.dropdown-submenu .dropdown-menu').forEach(function(submenu) {
                 submenu.style.display = 'none';
             });
         }
 
-        submenus.forEach(function (submenu) {
+        submenus.forEach(function(submenu) {
             var dropdownToggle = submenu.querySelector('.dropdown-toggle');
             var dropdownMenu = submenu.querySelector('.dropdown-menu');
 
             // Handle mouse enter on submenu
-            submenu.addEventListener('mouseenter', function () {
+            submenu.addEventListener('mouseenter', function() {
                 dropdownMenu.style.display = 'block';
             });
 
             // Handle mouse leave on submenu
-            submenu.addEventListener('mouseleave', function (event) {
+            submenu.addEventListener('mouseleave', function(event) {
                 // Check if the new hovered element is not a child of the submenu
                 if (!submenu.contains(event.relatedTarget)) {
                     dropdownMenu.style.display = 'none';
@@ -207,7 +203,7 @@
             });
 
             // Handle click on submenu toggle
-            dropdownToggle.addEventListener('click', function (event) {
+            dropdownToggle.addEventListener('click', function(event) {
                 event.preventDefault(); // Prevent navigating to '#'
                 if (dropdownMenu.style.display === 'block') {
                     dropdownMenu.style.display = 'none';
@@ -219,7 +215,7 @@
         });
 
         // Close submenus when clicking elsewhere on the page
-        document.addEventListener('click', function (event) {
+        document.addEventListener('click', function(event) {
             var isClickInsideSubmenu = event.target.closest('.dropdown-submenu');
             if (!isClickInsideSubmenu) {
                 closeAllSubmenus();
@@ -228,4 +224,5 @@
     });
     </script>
 </body>
+
 </html>
