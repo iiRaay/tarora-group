@@ -5,6 +5,7 @@
     <title>Tarora Rejuvenation</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="icon" href="images/logo-bw.png" type="image/png">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Prata&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/open-iconic-bootstrap.min.css">
@@ -19,6 +20,32 @@
     <link rel="stylesheet" href="css/flaticon.css">
     <link rel="stylesheet" href="css/icomoon.css">
     <link rel="stylesheet" href="css/style.css">
+    <style>
+        .dropdown:hover .dropdown:click .dropdown-menu {
+            display: grid;
+        }
+
+        .dropdown-submenu:hover .dropdown:click .dropdown-menu {
+            display: grid;
+        }
+
+        .dropdown-menu {
+            transition: all 0.5s ease; /* Adjust the transition duration as needed */
+        }
+
+        .dropdown-submenu:hover .dropdown-menu {
+            animation: fadeIn 0.5s ease; /* Adjust the animation duration as needed */
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+    </style>
 </head>
 
 <body>
@@ -28,14 +55,14 @@
                 <img src="images/logo-bw-black.png" width="200px" height="65px" />
             </a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#ftco-nav" aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="oi oi-menu"></span> Menu
+                <span class="oi oi-menu"></span>☰
             </button>
             <div class="collapse navbar-collapse" id="ftco-nav">
                 <ul class="navbar-nav ml-auto">
                     <li class="nav-item"><a href="/" class="nav-link">home</a></li>
                     <!-- Treatments Dropdown -->
                     <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownTreatments" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownTreatments" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" data-delay="1000">
                             Treatments
                         </a>
                         <ul class="dropdown-menu" aria-labelledby="navbarDropdownTreatments" style="position: absolute;">
@@ -81,90 +108,119 @@
                             </li>
                         </ul>
                     </li>
-                    <li class="nav-item active"><a href="specialists.html" class="nav-link">Our Team</a></li>
+                    <li class="nav-item active"><a href="products.html" class="nav-link">Products</a></li>
+                    <li class="nav-item"><a href="specialists.html" class="nav-link">Our Team</a></li>
                     <li class="nav-item"><a href="faq.html" class="nav-link">FAQ</a></li>
                     <li class="nav-item"><a href="contact.html" class="nav-link">About & Consultation</a></li>
                 </ul>
             </div>
         </div>
     </nav>
+    <br><br>
     <!-- END nav -->
-    <section class="hero-wrap hero-wrap-2" style="background-image: url('images/specialists_header.png'); position: relative; data-stellar-background-ratio=" 0.5">
-        <div style="position: absolute; top: 0; right: 0; bottom: 0; left: 0; background: rgba(0,0,0,0.4);"></div>
-        <div class="container"">
-        	<div class=" row no-gutters slider-text js-fullheight align-items-center justify-content-center">
-            <div class="col-md-9 ftco-animate text-center">
-                <!--<p class="breadcrumbs"><span class="mr-2"><a href="index.html">Home</a></span> <span>Treatments</span></p> -->
-            </div>
-        </div>
-        </div>
-    </section>
     <section class="ftco-section">
         <div class="container">
-            <div class="row justify-content-center mb-5">
-                <div class="col-md-12 heading-section text-center ftco-animate">
-                    <h3 class="subheading"></h3>
-                    <h2 class="mb-1">Our Team</h2>
-                </div>
-            </div>
-            <div class="row justify-content-md-center">
-                <div class="col-lg-4 d-flex">
-                    <div class="coach align-items-stretch">
-                        <div class="img" style="background-image: url(images/meena.png);"></div>
-                        <div class="text bg-white p-4 ftco-animate">
-                            <span class="subheading">CEO</span>
-                            <h3><a href="#">Meena</a></h3>
-                            <p>As the founder of Tarora Rejuvenation, Meena brings with her decades of experience around the aesthetics and medical industry as she has always been around professionals. She brings great insight and compassion in what she does, ensuring everyone is well taken care of and is delightful and satisfied with their experience.</p>
-                            <p></p>
-                        </div>
+            <div class="row">
+                <!-- Loop to generate product items -->
+                <!-- Example for one product -->
+                <div class="col-xl-2 col-sm-6">
+                    <div class="product-item text-center">
+                        <a href="product1.html">
+                            <img src="images/product-images/Acne_Balancing_Serum.jpg" alt="Alumier Acne Balancing Serum" class="img-fluid">
+                            <h5 class="product-name">Alumier Acne Balancing Serum</h5>
+                        </a>
                     </div>
                 </div>
-                <div class="col-lg-4 d-flex">
-                    <div class="coach align-items-stretch">
-                        <div class="img" style="background-image: url(images/tarannum.png);"></div>
-                        <div class="text bg-white p-4 ftco-animate">
-                            <span class="subheading">General Manager</span>
-                            <h3><a href="#">Tarannum</a></h3>
-                            <p>As the general manager of Tarora Rejuvenation Tarannum is currently in the final stages of finishing her Doctorate & has been working with medical professionals for over 5 years. She continually strives forward and keeps her knowledge up to date with the cutting edge advancements in the medical-aesthetics field to ensure everything she does exceeds the current Aesesthics medical standard.</p>
-                            <p></p>
-                        </div>
+                <div class="col-xl-2 col-sm-6">
+                    <div class="product-item text-center">
+                        <a href="link-to-specific-product-page.html">
+                            <img src="images/product-images/Acne_Clarifying_Cleanser.jpg" alt="Alumier Acne Balancing Serum" class="img-fluid">
+                            <h5 class="product-name">Alumier Acne Clarifying Cleanser</h5>
+                        </a>
                     </div>
                 </div>
-                <div class="col-lg-4 d-flex">
-                    <div class="coach align-items-stretch">
-                        <div class="img" style="background-image: url(images/jordan.png);"></div>
-                        <div class="text bg-white p-4 ftco-animate">
-                            <span class="subheading">Medical Esthetician</span>
-                            <h3><a href="#">Jordan</a></h3>
-                            <p>As a leading Clinical Esthetician of Tarora Rejuvenation, Jordan has over 5 years in the beauty industry and has the know-how's of many different procedures and treatments. She provides top of the line recommendations with various solutions so you are always informed and can make the best possible decision to look as stunning as possible.</p>
-                            <p></p>
-                        </div>
+                <div class="col-xl-2 col-sm-6">
+                    <div class="product-item text-center">
+                        <a href="link-to-specific-product-page.html">
+                            <img src="images/product-images/AHA_Renewal_Serum.jpg" alt="Alumier Acne Balancing Serum" class="img-fluid">
+                            <h5 class="product-name">Alumier AHA Renewal Serum</h5>
+                        </a>
                     </div>
                 </div>
-                <div class="col-lg-4 d-flex">
-                    <div class="coach align-items-stretch">
-                        <div class="img" style="background-image: url(images/rahab.png);"></div>
-                        <div class="text bg-white p-4 ftco-animate">
-                            <span class="subheading">Registered Nurse</span>
-                            <h3><a href="#">Rahab</a></h3>
-                            <p>As the Premier registered nurse of Tarora Rejuvenation, Rahab brings extensive medical and Aesthetical experience to the field, With over 10 years of experience as a nurse, and over 5 years as an injector; she strives to make the beauty process as relaxing as possible while making you look astonishingly captivating.
-                            </p>
-                            <p></p>
-                        </div>
+                <div class="col-xl-2 col-sm-6">
+                    <div class="product-item text-center">
+                        <a href="link-to-specific-product-page.html">
+                            <img src="images/product-images/Bottle_Alumience_AGE.jpg" alt="Alumier Acne Balancing Serum" class="img-fluid">
+                            <h5 class="product-name">Alumier Alumience A.G.E</h5>
+                        </a>
                     </div>
                 </div>
-                <div class="col-lg-4 d-flex">
-                    <div class="coach align-items-stretch">
-                        <div class="img" style="background-image: url(images/dona.png);"></div>
-                        <div class="text bg-white p-4 ftco-animate">
-                            <span class="subheading">Permanent Makeup Artist</span>
-                            <h3><a href="#">Dona</a></h3>
-                            <p>As a leading professional in the Permanent cosmetic industry, Dona brings with her, 8 years of experience in the industry and has worked with some of the biggest names such as Chanel, Mac Cosmetics and Estee Lauder. She is a master at her art; as not only can she make you the next glamour girl, she can also teach you it!
-                            </p>
-                            <p></p>
-                        </div>
+                <div class="col-xl-2 col-sm-6">
+                    <div class="product-item text-center">
+                        <a href="link-to-specific-product-page.html">
+                            <img src="images/product-images/BPO_Facial_Gel.png" alt="Alumier Acne Balancing Serum" class="img-fluid">
+                            <h5 class="product-name">Alumier BPO Facial Gel</h5>
+                        </a>
                     </div>
                 </div>
+                <div class="col-xl-2 col-sm-6">
+                    <div class="product-item text-center">
+                        <a href="link-to-specific-product-page.html">
+                            <img src="images/product-images/Bright_Clear_Solution.jpg" alt="Alumier Acne Balancing Serum" class="img-fluid">
+                            <h5 class="product-name">Alumier Bright & Clear Solution</h5>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-xl-2 col-sm-6">
+                    <div class="product-item text-center">
+                        <a href="link-to-specific-product-page.html">
+                            <img src="images/product-images/Acne_Balancing_Serum.jpg" alt="Alumier Acne Balancing Serum" class="img-fluid">
+                            <h5 class="product-name">Alumier Brightening Collection - Dry/Sensitive (w/HQ)</h5>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-xl-2 col-sm-6">
+                    <div class="text-center">
+                        <a href="link-to-specific-product-page.html">
+                            <img src="images/product-images/Acne_Balancing_Serum.jpg" alt="Alumier Acne Balancing Serum" class="img-fluid">
+                            <h5>Alumier Brightening Collection Normal/Oily (w/HQ)</h5>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-xl-2 col-sm-6">
+                    <div class="product-item text-center">
+                        <a href="link-to-specific-product-page.html">
+                            <img src="images/product-images/Acne_Balancing_Serum.jpg" alt="Alumier Acne Balancing Serum" class="img-fluid">
+                            <h5 class="product-name">Alumier Brightening Collection Normal/Oily (w/HQ)</h5>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-xl-2 col-sm-6">
+                    <div class="product-item text-center">
+                        <a href="link-to-specific-product-page.html">
+                            <img src="images/product-images/Acne_Balancing_Serum.jpg" alt="Alumier Acne Balancing Serum" class="img-fluid">
+                            <h5 class="product-name">Alumier Calm-</h5>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-xl-2 col-sm-6">
+                    <div class="product-item text-center">
+                        <a href="link-to-specific-product-page.html">
+                            <img src="images/product-images/Acne_Balancing_Serum.jpg" alt="Alumier Acne Balancing Serum" class="img-fluid">
+                            <h5 class="product-name">Alumier Clarifying Collection Kit</h5>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-xl-2 col-sm-6">
+                    <div class="product-item text-center">
+                        <a href="link-to-specific-product-page.html">
+                            <img src="images/product-images/Acne_Balancing_Serum.jpg" alt="Alumier Acne Balancing Serum" class="img-fluid">
+                            <h5 class="product-name">Alumier Calming Collection Kit</h5>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Repeat the above block for each product (45 times) -->
             </div>
         </div>
     </section>
@@ -181,17 +237,6 @@
                         </ul>
                     </div>
                 </div>
-                <!-- <div class="col-md">
-    <div class="ftco-footer-widget mb-4 ml-md-4">
-        <h2 class="ftco-heading-2">Popular Links</h2>
-        <ul class="list-unstyled">
-            <li><a href="#">Aromatheraphy</a></li>
-            <li><a href="#">Skin Care</a></li>
-            <li><a href="#">Herbal Spa</a></li>
-            <li><a href="#">Body Massage</a></li>
-        </ul>
-    </div>
-</div> -->
                 <div class="col-md">
                     <div class="ftco-footer-widget mb-4">
                         <h2 class="ftco-heading-2">Quick Links</h2>
@@ -220,11 +265,9 @@
             <div class="row">
                 <div class="col-md-12 text-center">
                     <p class="mb-0">
-                        <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
                         Copyright &copy;<script>
                         document.write(new Date().getFullYear());
-                        </script> All rights reserved | This template is made with <i class="icon-heart" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">Colorlib</a>
-                        <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+                        </script> All rights reserved | Managed by Pulsefire Marketing
                     </p>
                 </div>
             </div>
@@ -251,6 +294,18 @@
     <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBVWaKrjvy3MaE7SQ74_uJiULgl1JY0H2s&sensor=false"></script>
     <script src="js/google-map.js"></script>
     <script src="js/main.js"></script>
+    <script src="js/getFooter.js"></script>
+    <script>
+    document.querySelectorAll('.dropdown').forEach(function(dropdown) {
+        dropdown.addEventListener('mouseenter', function() {
+            this.classList.add('show');
+        });
+
+        dropdown.addEventListener('mouseleave', function() {
+            this.classList.remove('show');
+        });
+    });
+    </script>
     <script>
     document.addEventListener('DOMContentLoaded', function() {
         var submenus = document.querySelectorAll('.dropdown-submenu');
