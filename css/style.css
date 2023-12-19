@@ -14016,3 +14016,7 @@ textarea.form-control {
     right: 0;
     /* Adjust right arrow position */
 }
+
+.product-item {
+    margin-bottom: 4rem ; /* Adjust this value as needed */
+}
