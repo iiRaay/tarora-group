@@ -26,7 +26,6 @@
     <nav class="navbar navbar-expand-lg navbar-dark ftco_navbar bg-dark ftco-navbar-light" id="ftco-navbar">
         <div class="container">
             <a class="navbar-brand" href="/">
-                <!-- <span class="flaticon-lotus"></span> -->
                 <img src="images/logo-bw-black.png" width="200px" height="65px" />
             </a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#ftco-nav" aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
@@ -34,23 +33,58 @@
             </button>
             <div class="collapse navbar-collapse" id="ftco-nav">
                 <ul class="navbar-nav ml-auto">
-                    <li class="nav-item active"><a href="/" class="nav-link">home</a></li>
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownTreatments" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" data-delay="500">
+                    <li class="nav-item"><a href="/" class="nav-link">home</a></li>
+                    <!-- Treatments Dropdown -->
+                    <li class="nav-item dropdown active">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownTreatments" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                             Treatments
                         </a>
-                        <div class="dropdown-menu" aria-labelledby="navbarDropdownTreatments">
-                            <!-- Dropdown items go here -->
-                            <a class="dropdown-item" href="#">Treatment 1</a>
-                            <a class="dropdown-item" href="#">Treatment 2</a>
-                            <div class="dropdown-divider"></div>
-                            <a class="dropdown-item" href="#">Another Treatment</a>
-                        </div>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdownTreatments" style="position: absolute;">
+                            <!-- Skin Care & Rejuvenation -->
+                            <li class="dropdown-submenu" style="position: relative;">
+                                <a class="dropdown-item dropdown-toggle" href="#">Skin Care & Rejuvenation</a>
+                                <ul class="dropdown-menu" style="display: none; position: absolute; top: 0; left: 100%; margin-top: -6px; margin-left: -1px;">
+                                    <li><a class="dropdown-item" href="microneedling.html">Microneedling</a></li>
+                                    <li><a class="dropdown-item" href="dermaplaning.html">Dermaplaning</a></li>
+                                    <li><a class="dropdown-item" href="hydrafacial.html">Hydrafacial</a></li>
+                                    <li><a class="dropdown-item" href="acneSolutionsFacial.html">Acne Solutions Facial</a></li>
+                                    <li><a class="dropdown-item" href="chemicalPeel.html">Chemical Peel</a></li>
+                                    <li><a class="dropdown-item" href="taroraRestoreAndRejuvenate.html">Tarora Restore & Rejuvenate</a></li>
+                                    <li><a class="dropdown-item" href="eyebrowTinting.html">Eyebrow Tinting</a></li>
+                                    <li><a class="dropdown-item" href="eyebrowLamination.html">Eyebrow Lamination</a></li>
+                                </ul>
+                            </li>
+                            <!-- Injectables -->
+                            <li class="dropdown-submenu" style="position: relative;">
+                                <a class="dropdown-item dropdown-toggle" href="#">Injectables</a>
+                                <ul class="dropdown-menu" style="display: none; position: absolute; top: 0; left: 100%; margin-top: -6px; margin-left: -1px;">
+                                    <li><a class="dropdown-item" href="botox.html">Botox</a></li>
+                                    <li><a class="dropdown-item" href="dermafillers.html">Dermal Fillers</a></li>
+                                </ul>
+                            </li>
+                            <!-- Laser & Hair Removal -->
+                            <li class="dropdown-submenu" style="position: relative;">
+                                <a class="dropdown-item dropdown-toggle" href="#">Laser & Hair Removal</a>
+                                <ul class="dropdown-menu" style="display: none; position: absolute; top: 0; left: 100%; margin-top: -6px; margin-left: -1px;">
+                                    <li><a class="dropdown-item" href="threading.html">Threading</a></li>
+                                    <li><a class="dropdown-item" href="hairRemoval.html">Laser Hair Removal</a></li>
+                                    <li><a class="dropdown-item" href="waxing.html">Waxing</a></li>
+                                </ul>
+                            </li>
+                            <!-- Advanced Skincare & Rejuvenation -->
+                            <li class="dropdown-submenu" style="position: relative;">
+                                <a class="dropdown-item dropdown-toggle" href="#">Advanced Skincare & Rejuvenation</a>
+                                <ul class="dropdown-menu" style="display: none; position: absolute; top: 0; left: 100%; margin-top: -6px; margin-left: -1px;">
+                                    <li><a class="dropdown-item" href="morpheus8.html">Morpheus 8</a></li>
+                                    <li><a class="dropdown-item" href="lumeccaIPL.html">Lumecca IPL Facial</a></li>
+                                    <li><a class="dropdown-item" href="skinTightening.html">Forma RF Skin Tightening Facial</a></li>
+                                </ul>
+                            </li>
+                        </ul>
                     </li>
                     <li class="nav-item"><a href="products.html" class="nav-link">Products</a></li>
                     <li class="nav-item"><a href="specialists.html" class="nav-link">Our Team</a></li>
-                    <li class="nav-item"><a href="#about-section" class="nav-link">FAQ</a></li>
-                    <!-- <li class="nav-item"><a href="blog.html" class="nav-link">Blog</a></li> -->
+                    <li class="nav-item"><a href="faq.html" class="nav-link">FAQ</a></li>
                     <li class="nav-item"><a href="contact.html" class="nav-link">About & Consultation</a></li>
                 </ul>
             </div>
