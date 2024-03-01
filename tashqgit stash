@@ -1,0 +1,304 @@
+[1mdiff --git a/specialists.html b/specialists.html[m
+[1mindex 444700d..25d9f40 100644[m
+[1m--- a/specialists.html[m
+[1m+++ b/specialists.html[m
+[36m@@ -27,7 +27,8 @@[m
+             <a class="navbar-brand" href="/">[m
+                 <img src="images/logo-bw-black.png" width="200px" height="65px" />[m
+             </a>[m
+[31m-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#ftco-nav" aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">[m
+[32m+[m[32m            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#ftco-nav"[m
+[32m+[m[32m                aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">[m
+                 <span class="oi oi-menu"></span> Menu[m
+             </button>[m
+             <div class="collapse navbar-collapse" id="ftco-nav">[m
+[36m@@ -35,28 +36,35 @@[m
+                     <li class="nav-item"><a href="/" class="nav-link">home</a></li>[m
+                     <!-- Treatments Dropdown -->[m
+                     <li class="nav-item dropdown">[m
+[31m-                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownTreatments" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">[m
+[32m+[m[32m                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownTreatments" role="button"[m
+[32m+[m[32m                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">[m
+                             Treatments[m
+                         </a>[m
+[31m-                        <ul class="dropdown-menu" aria-labelledby="navbarDropdownTreatments" style="position: absolute;">[m
+[32m+[m[32m                        <ul class="dropdown-menu" aria-labelledby="navbarDropdownTreatments"[m
+[32m+[m[32m                            style="position: absolute;">[m
+                             <!-- Skin Care & Rejuvenation -->[m
+                             <li class="dropdown-submenu" style="position: relative;">[m
+                                 <a class="dropdown-item dropdown-toggle" href="#">Skin Care & Rejuvenation</a>[m
+[31m-                                <ul class="dropdown-menu" style="display: none; position: absolute; top: 0; left: 100%; margin-top: -6px; margin-left: -1px;">[m
+[32m+[m[32m                                <ul class="dropdown-menu"[m
+[32m+[m[32m                                    style="display: none; position: absolute; top: 0; left: 100%; margin-top: -6px; margin-left: -1px;">[m
+                                     <li><a class="dropdown-item" href="microneedling.html">Microneedling</a></li>[m
+                                     <li><a class="dropdown-item" href="dermaplaning.html">Dermaplaning</a></li>[m
+                                     <li><a class="dropdown-item" href="hydrafacial.html">Hydrafacial</a></li>[m
+[31m-                                    <li><a class="dropdown-item" href="acneSolutionsFacial.html">Acne Solutions Facial</a></li>[m
+[32m+[m[32m                                    <li><a class="dropdown-item" href="acneSolutionsFacial.html">Acne Solutions[m
+[32m+[m[32m                                            Facial</a></li>[m
+                                     <li><a class="dropdown-item" href="chemicalPeel.html">Chemical Peel</a></li>[m
+[31m-                                    <li><a class="dropdown-item" href="taroraRestoreAndRejuvenate.html">Tarora Restore & Rejuvenate</a></li>[m
+[32m+[m[32m                                    <li><a class="dropdown-item" href="taroraRestoreAndRejuvenate.html">Tarora Restore &[m
+[32m+[m[32m                                            Rejuvenate</a></li>[m
+                                     <li><a class="dropdown-item" href="eyebrowTinting.html">Eyebrow Tinting</a></li>[m
+[31m-                                    <li><a class="dropdown-item" href="eyebrowLamination.html">Eyebrow Lamination</a></li>[m
+[32m+[m[32m                                    <li><a class="dropdown-item" href="eyebrowLamination.html">Eyebrow Lamination</a>[m
+[32m+[m[32m                                    </li>[m
+                                 </ul>[m
+                             </li>[m
+                             <!-- Injectables -->[m
+                             <li class="dropdown-submenu" style="position: relative;">[m
+                                 <a class="dropdown-item dropdown-toggle" href="#">Injectables</a>[m
+[31m-                                <ul class="dropdown-menu" style="display: none; position: absolute; top: 0; left: 100%; margin-top: -6px; margin-left: -1px;">[m
+[32m+[m[32m                                <ul class="dropdown-menu"[m
+[32m+[m[32m                                    style="display: none; position: absolute; top: 0; left: 100%; margin-top: -6px; margin-left: -1px;">[m
+                                     <li><a class="dropdown-item" href="botox.html">Botox</a></li>[m
+                                     <li><a class="dropdown-item" href="dermafillers.html">Dermal Fillers</a></li>[m
+                                 </ul>[m
+[36m@@ -64,7 +72,8 @@[m
+                             <!-- Laser & Hair Removal -->[m
+                             <li class="dropdown-submenu" style="position: relative;">[m
+                                 <a class="dropdown-item dropdown-toggle" href="#">Laser & Hair Removal</a>[m
+[31m-                                <ul class="dropdown-menu" style="display: none; position: absolute; top: 0; left: 100%; margin-top: -6px; margin-left: -1px;">[m
+[32m+[m[32m                                <ul class="dropdown-menu"[m
+[32m+[m[32m                                    style="display: none; position: absolute; top: 0; left: 100%; margin-top: -6px; margin-left: -1px;">[m
+                                     <li><a class="dropdown-item" href="threading.html">Threading</a></li>[m
+                                     <li><a class="dropdown-item" href="hairRemoval.html">Laser Hair Removal</a></li>[m
+                                     <li><a class="dropdown-item" href="waxing.html">Waxing</a></li>[m
+[36m@@ -73,10 +82,12 @@[m
+                             <!-- Advanced Skincare & Rejuvenation -->[m
+                             <li class="dropdown-submenu" style="position: relative;">[m
+                                 <a class="dropdown-item dropdown-toggle" href="#">Advanced Skincare & Rejuvenation</a>[m
+[31m-                                <ul class="dropdown-menu" style="display: none; position: absolute; top: 0; left: 100%; margin-top: -6px; margin-left: -1px;">[m
+[32m+[m[32m                                <ul class="dropdown-menu"[m
+[32m+[m[32m                                    style="display: none; position: absolute; top: 0; left: 100%; margin-top: -6px; margin-left: -1px;">[m
+                                     <li><a class="dropdown-item" href="morpheus8.html">Morpheus 8</a></li>[m
+                                     <li><a class="dropdown-item" href="lumeccaIPL.html">Lumecca IPL Facial</a></li>[m
+[31m-                                    <li><a class="dropdown-item" href="skinTightening.html">Forma RF Skin Tightening Facial</a></li>[m
+[32m+[m[32m                                    <li><a class="dropdown-item" href="skinTightening.html">Forma RF Skin Tightening[m
+[32m+[m[32m                                            Facial</a></li>[m
+                                 </ul>[m
+                             </li>[m
+                         </ul>[m
+[36m@@ -89,7 +100,9 @@[m
+         </div>[m
+     </nav>[m
+     <!-- END nav -->[m
+[31m-    <section class="hero-wrap hero-wrap-2" style="background-image: url('images/specialists_header.png'); position: relative; data-stellar-background-ratio=" 0.5">[m
+[32m+[m[32m    <section class="hero-wrap hero-wrap-2"[m
+[32m+[m[32m        style="background-image: url('images/specialists_header.png'); position: relative; data-stellar-background-ratio="[m
+[32m+[m[32m        0.5">[m
+         <div style="position: absolute; top: 0; right: 0; bottom: 0; left: 0; background: rgba(0,0,0,0.4);"></div>[m
+         <div class="container"">[m
+         	<div class=" row no-gutters slider-text js-fullheight align-items-center justify-content-center">[m
+[36m@@ -114,7 +127,10 @@[m
+                         <div class="text bg-white p-4 ftco-animate">[m
+                             <span class="subheading">CEO</span>[m
+                             <h3><a href="#">Meena</a></h3>[m
+[31m-                            <p>As the founder of Tarora Rejuvenation, Meena brings with her decades of experience around the aesthetics and medical industry as she has always been around professionals. She brings great insight and compassion in what she does, ensuring everyone is well taken care of and is delightful and satisfied with their experience.</p>[m
+[32m+[m[32m                            <p>As the founder of Tarora Rejuvenation, Meena brings with her decades of experience around[m
+[32m+[m[32m                                the aesthetics and medical industry as she has always been around professionals. She[m
+[32m+[m[32m                                brings great insight and compassion in what she does, ensuring everyone is well taken[m
+[32m+[m[32m                                care of and is delightful and satisfied with their experience.</p>[m
+                             <p></p>[m
+                         </div>[m
+                     </div>[m
+[36m@@ -125,7 +141,11 @@[m
+                         <div class="text bg-white p-4 ftco-animate">[m
+                             <span class="subheading">General Manager</span>[m
+                             <h3><a href="#">Tarannum</a></h3>[m
+[31m-                            <p>As the general manager of Tarora Rejuvenation Tarannum is currently in the final stages of finishing her medical degree & has been working with medical professionals for over 5 years. She continually strives forward and keeps her knowledge up to date with the cutting edge advancements in the medical-aesthetics field to ensure everything she does exceeds the current Aesesthics medical standard.</p>[m
+[32m+[m[32m                            <p>As the general manager of Tarora Rejuvenation Tarannum is currently in the final stages[m
+[32m+[m[32m                                of finishing her medical degree & has been working with medical professionals for over 5[m
+[32m+[m[32m                                years. She continually strives forward and keeps her knowledge up to date with the[m
+[32m+[m[32m                                cutting edge advancements in the medical-aesthetics field to ensure everything she does[m
+[32m+[m[32m                                exceeds the current Aesesthics medical standard.</p>[m
+                             <p></p>[m
+                         </div>[m
+                     </div>[m
+[36m@@ -136,7 +156,10 @@[m
+                         <div class="text bg-white p-4 ftco-animate">[m
+                             <span class="subheading">Medical Esthetician</span>[m
+                             <h3><a href="#">Jordan</a></h3>[m
+[31m-                            <p>As a leading Clinical Esthetician of Tarora Rejuvenation, Jordan has over 5 years in the beauty industry and has the know-how's of many different procedures and treatments. She provides top of the line recommendations with various solutions so you are always informed and can make the best possible decision to look as stunning as possible.</p>[m
+[32m+[m[32m                            <p>As a leading Clinical Esthetician of Tarora Rejuvenation, Jordan has over 5 years in the[m
+[32m+[m[32m                                beauty industry and has the know-how's of many different procedures and treatments. She[m
+[32m+[m[32m                                provides top of the line recommendations with various solutions so you are always[m
+[32m+[m[32m                                informed and can make the best possible decision to look as stunning as possible.</p>[m
+                             <p></p>[m
+                         </div>[m
+                     </div>[m
+[36m@@ -147,19 +170,10 @@[m
+                         <div class="text bg-white p-4 ftco-animate">[m
+                             <span class="subheading">Registered Nurse</span>[m
+                             <h3><a href="#">Rahab</a></h3>[m
+[31m-                            <p>As the Premier registered nurse of Tarora Rejuvenation, Rahab brings extensive medical and Aesthetical experience to the field, With over 10 years of experience as a nurse, and over 5 years as an injector; she strives to make the beauty process as relaxing as possible while making you look astonishingly captivating.[m
+[31m-                            </p>[m
+[31m-                            <p></p>[m
+[31m-                        </div>[m
+[31m-                    </div>[m
+[31m-                </div>[m
+[31m-                <div class="col-lg-4 d-flex">[m
+[31m-                    <div class="coach align-items-stretch">[m
+[31m-                        <div class="img" style="background-image: url(images/dona.png);"></div>[m
+[31m-                        <div class="text bg-white p-4 ftco-animate">[m
+[31m-                            <span class="subheading">Permanent Makeup Artist</span>[m
+[31m-                            <h3><a href="#">Dona</a></h3>[m
+[31m-                            <p>As a leading professional in the Permanent cosmetic industry, Dona brings with her, 8 years of experience in the industry and has worked with some of the biggest names such as Chanel, Mac Cosmetics and Estee Lauder. She is a master at her art; as not only can she make you the next glamour girl, she can also teach you it![m
+[32m+[m[32m                            <p>As the Premier registered nurse of Tarora Rejuvenation, Rahab brings extensive medical[m
+[32m+[m[32m                                and Aesthetical experience to the field, With over 10 years of experience as a nurse,[m
+[32m+[m[32m                                and over 5 years as an injector; she strives to make the beauty process as relaxing as[m
+[32m+[m[32m                                possible while making you look astonishingly captivating.[m
+                             </p>[m
+                             <p></p>[m
+                         </div>[m
+[36m@@ -176,8 +190,10 @@[m
+                         <h2 class="ftco-heading-2">Tarora Rejuvenation</h2>[m
+                         <p>Realize the skin of your dreams</p>[m
+                         <ul class="ftco-footer-social list-unstyled float-lft mt-3">[m
+[31m-                            <li class="ftco-animate"><a href="https://www.facebook.com/tarorarejuvenation/"><span class="icon-facebook"></span></a></li>[m
+[31m-                            <li class="ftco-animate"><a href="https://www.instagram.com/tarorarejuvenation/"><span class="icon-instagram"></span></a></li>[m
+[32m+[m[32m                            <li class="ftco-animate"><a href="https://www.facebook.com/tarorarejuvenation/"><span[m
+[32m+[m[32m                                        class="icon-facebook"></span></a></li>[m
+[32m+[m[32m                            <li class="ftco-animate"><a href="https://www.instagram.com/tarorarejuvenation/"><span[m
+[32m+[m[32m                                        class="icon-instagram"></span></a></li>[m
+                         </ul>[m
+                     </div>[m
+                 </div>[m
+[36m@@ -210,8 +226,10 @@[m
+                             <ul>[m
+                                 <li><span class="icon icon-map-marker"></span><span class="text">[m
+                                         50 Nolanridge Ct NW #140, Calgary, AB T3R 1W7</span></li>[m
+[31m-                                <li><a href="#"><span class="icon icon-phone"></span><span class="text">(403) 910-1741</span></a></li>[m
+[31m-                                <li><a href="#"><span class="icon icon-envelope"></span><span class="text">tarorarejuvenationyyc@gmail.com</span></a></li>[m
+[32m+[m[32m                                <li><a href="#"><span class="icon icon-phone"></span><span class="text">(403)[m
+[32m+[m[32m                                            910-1741</span></a></li>[m
+[32m+[m[32m                                <li><a href="#"><span class="icon icon-envelope"></span><span[m
+[32m+[m[32m                                            class="text">tarorarejuvenationyyc@gmail.com</span></a></li>[m
+                             </ul>[m
+                         </div>[m
+                     </div>[m
+[36m@@ -221,9 +239,11 @@[m
+                 <div class="col-md-12 text-center">[m
+                     <p class="mb-0">[m
+                         <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->[m
+[31m-                        Copyright &copy;<script>[m
+[31m-                        document.write(new Date().getFullYear());[m
+[31m-                        </script> All rights reserved | This template is made with <i class="icon-heart" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">Colorlib</a>[m
+[32m+[m[32m                        Copyright &copy;[m
+[32m+[m[32m                        <script>[m
+[32m+[m[32m                            document.write(new Date().getFullYear());[m
+[32m+[m[32m                        </script> All rights reserved | This template is made with <i class="icon-heart"[m
+[32m+[m[32m                            aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">Colorlib</a>[m
+                         <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->[m
+                     </p>[m
+                 </div>[m
+[36m@@ -233,7 +253,9 @@[m
+     <!-- loader -->[m
+     <div id="ftco-loader" class="show fullscreen"><svg class="circular" width="48px" height="48px">[m
+             <circle class="path-bg" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke="#eeeeee" />[m
+[31m-            <circle class="path" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke-miterlimit="10" stroke="#F96D00" /></svg></div>[m
+[32m+[m[32m            <circle class="path" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke-miterlimit="10"[m
+[32m+[m[32m                stroke="#F96D00" />[m
+[32m+[m[32m        </svg></div>[m
+     <script src="js/jquery.min.js"></script>[m
+     <script src="js/jquery-migrate-3.0.1.min.js"></script>[m
+     <script src="js/popper.min.js"></script>[m
+[36m@@ -248,57 +270,58 @@[m
+     <script src="js/bootstrap-datepicker.js"></script>[m
+     <script src="js/jquery.timepicker.min.js"></script>[m
+     <script src="js/scrollax.min.js"></script>[m
+[31m-    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBVWaKrjvy3MaE7SQ74_uJiULgl1JY0H2s&sensor=false"></script>[m
+[32m+[m[32m    <script[m
+[32m+[m[32m        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBVWaKrjvy3MaE7SQ74_uJiULgl1JY0H2s&sensor=false"></script>[m
+     <script src="js/google-map.js"></script>[m
+     <script src="js/main.js"></script>[m
+     <script>[m
+[31m-    document.addEventListener('DOMContentLoaded', function() {[m
+[31m-        var submenus = document.querySelectorAll('.dropdown-submenu');[m
+[32m+[m[32m        document.addEventListener('DOMContentLoaded', function () {[m
+[32m+[m[32m            var submenus = document.querySelectorAll('.dropdown-submenu');[m
+ [m
+[31m-        // Function to close all submenus[m
+[31m-        function closeAllSubmenus() {[m
+[31m-            document.querySelectorAll('.dropdown-submenu .dropdown-menu').forEach(function(submenu) {[m
+[31m-                submenu.style.display = 'none';[m
+[31m-            });[m
+[31m-        }[m
+[32m+[m[32m            // Function to close all submenus[m
+[32m+[m[32m            function closeAllSubmenus() {[m
+[32m+[m[32m                document.querySelectorAll('.dropdown-submenu .dropdown-menu').forEach(function (submenu) {[m
+[32m+[m[32m                    submenu.style.display = 'none';[m
+[32m+[m[32m                });[m
+[32m+[m[32m            }[m
+ [m
+[31m-        submenus.forEach(function(submenu) {[m
+[31m-            var dropdownToggle = submenu.querySelector('.dropdown-toggle');[m
+[31m-            var dropdownMenu = submenu.querySelector('.dropdown-menu');[m
+[32m+[m[32m            submenus.forEach(function (submenu) {[m
+[32m+[m[32m                var dropdownToggle = submenu.querySelector('.dropdown-toggle');[m
+[32m+[m[32m                var dropdownMenu = submenu.querySelector('.dropdown-menu');[m
+ [m
+[31m-            // Handle mouse enter on submenu[m
+[31m-            submenu.addEventListener('mouseenter', function() {[m
+[31m-                dropdownMenu.style.display = 'block';[m
+[31m-            });[m
+[32m+[m[32m                // Handle mouse enter on submenu[m
+[32m+[m[32m                submenu.addEventListener('mouseenter', function () {[m
+[32m+[m[32m                    dropdownMenu.style.display = 'block';[m
+[32m+[m[32m                });[m
+ [m
+[31m-            // Handle mouse leave on submenu[m
+[31m-            submenu.addEventListener('mouseleave', function(event) {[m
+[31m-                // Check if the new hovered element is not a child of the submenu[m
+[31m-                if (!submenu.contains(event.relatedTarget)) {[m
+[31m-                    dropdownMenu.style.display = 'none';[m
+[31m-                }[m
+[32m+[m[32m                // Handle mouse leave on submenu[m
+[32m+[m[32m                submenu.addEventListener('mouseleave', function (event) {[m
+[32m+[m[32m                    // Check if the new hovered element is not a child of the submenu[m
+[32m+[m[32m                    if (!submenu.contains(event.relatedTarget)) {[m
+[32m+[m[32m                        dropdownMenu.style.display = 'none';[m
+[32m+[m[32m                    }[m
+[32m+[m[32m                });[m
+[32m+[m
+[32m+[m[32m                // Handle click on submenu toggle[m
+[32m+[m[32m                dropdownToggle.addEventListener('click', function (event) {[m
+[32m+[m[32m                    event.preventDefault(); // Prevent navigating to '#'[m
+[32m+[m[32m                    if (dropdownMenu.style.display === 'block') {[m
+[32m+[m[32m                        dropdownMenu.style.display = 'none';[m
+[32m+[m[32m                    } else {[m
+[32m+[m[32m                        closeAllSubmenus(); // Close other open submenus[m
+[32m+[m[32m                        dropdownMenu.style.display = 'block';[m
+[32m+[m[32m                    }[m
+[32m+[m[32m                });[m
+             });[m
+ [m
+[31m-            // Handle click on submenu toggle[m
+[31m-            dropdownToggle.addEventListener('click', function(event) {[m
+[31m-                event.preventDefault(); // Prevent navigating to '#'[m
+[31m-                if (dropdownMenu.style.display === 'block') {[m
+[31m-                    dropdownMenu.style.display = 'none';[m
+[31m-                } else {[m
+[31m-                    closeAllSubmenus(); // Close other open submenus[m
+[31m-                    dropdownMenu.style.display = 'block';[m
+[32m+[m[32m            // Close submenus when clicking elsewhere on the page[m
+[32m+[m[32m            document.addEventListener('click', function (event) {[m
+[32m+[m[32m                var isClickInsideSubmenu = event.target.closest('.dropdown-submenu');[m
+[32m+[m[32m                if (!isClickInsideSubmenu) {[m
+[32m+[m[32m                    closeAllSubmenus();[m
+                 }[m
+             });[m
+         });[m
+[31m-[m
+[31m-        // Close submenus when clicking elsewhere on the page[m
+[31m-        document.addEventListener('click', function(event) {[m
+[31m-            var isClickInsideSubmenu = event.target.closest('.dropdown-submenu');[m
+[31m-            if (!isClickInsideSubmenu) {[m
+[31m-                closeAllSubmenus();[m
+[31m-            }[m
+[31m-        });[m
+[31m-    });[m
+     </script>[m
+ </body>[m
+ [m
