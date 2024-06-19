@@ -19,10 +19,39 @@
     <link rel="stylesheet" href="../css/flaticon.css">
     <link rel="stylesheet" href="../css/icomoon.css">
     <link rel="stylesheet" href="../css/style.css">
+    <style>
+        .product-info {
+            margin-top: 20px;
+        }
+        .product-price {
+            font-size: 1.5em;
+            color: #333;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+        .purchase-link {
+            font-size: 0.9em;
+            color: #007bff;
+        }
+        .purchase-link a {
+            color: #007bff;
+            text-decoration: underline;
+
+        }
+        .purchase-link a:hover {
+            text-decoration: underline;
+        }
+        .delivery-note {
+            margin-top: 10px;
+            font-size: 0.8em;
+            color: #555;
+            font-style: italic;
+        }
+    </style>
 </head>
 
 <body>
-    <!-- ... [navigation remains the same] ... -->
+    <!-- Navigation remains the same -->
     <nav class="navbar navbar-expand-lg navbar-dark ftco_navbar bg-dark ftco-navbar-light" id="ftco-navbar">
         <div class="container">
             <a class="navbar-brand" href="../index.html">
@@ -35,16 +64,10 @@
             <div class="collapse navbar-collapse" id="ftco-nav">
                 <ul class="navbar-nav ml-auto">
                     <li class="nav-item"><a href="../index.html" class="nav-link">Home</a></li>
-
-                    <!-- Treatments Dropdown -->
                     <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownTreatments" role="button"
-                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                            Treatments
-                        </a>
-                        <ul class="dropdown-menu" aria-labelledby="navbarDropdownTreatments"
-                            style="position: absolute;">
-                            <!-- Skin Care & Rejuvenation -->
+                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Treatments</a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdownTreatments" style="position: absolute;">
                             <li class="dropdown-submenu" style="position: relative;">
                                 <a class="dropdown-item dropdown-toggle" href="#">Skin Care & Rejuvenation</a>
                                 <ul class="dropdown-menu"
@@ -62,8 +85,6 @@
                                     </li>
                                 </ul>
                             </li>
-
-                            <!-- Injectables -->
                             <li class="dropdown-submenu" style="position: relative;">
                                 <a class="dropdown-item dropdown-toggle" href="#">Injectables</a>
                                 <ul class="dropdown-menu"
@@ -72,8 +93,6 @@
                                     <li><a class="dropdown-item" href="../dermafillers.html">Dermal Fillers</a></li>
                                 </ul>
                             </li>
-
-                            <!-- Laser & Hair Removal -->
                             <li class="dropdown-submenu" style="position: relative;">
                                 <a class="dropdown-item dropdown-toggle" href="#">Laser & Hair Removal</a>
                                 <ul class="dropdown-menu"
@@ -83,8 +102,6 @@
                                     <li><a class="dropdown-item" href="../waxing.html">Waxing</a></li>
                                 </ul>
                             </li>
-
-                            <!-- Advanced Skincare & Rejuvenation -->
                             <li class="dropdown-submenu" style="position: relative;">
                                 <a class="dropdown-item dropdown-toggle" href="#">Advanced Skincare & Rejuvenation</a>
                                 <ul class="dropdown-menu"
@@ -105,6 +122,7 @@
             </div>
         </div>
     </nav>
+
     <section class="hero-wrap hero-wrap-2" style="background-image: url('images/night-serum-banner.jpg');"
         data-stellar-background-ratio="0.5">
         <div class="overlay"></div>
@@ -124,13 +142,18 @@
                 <div class="col-md-6">
                     <div class="heading-section ftco-animate">
                         <h2 class="mb-4">Alumier Lightening Lotion</h2>
+                        <p class="product-price">$110.00</p>
                     </div>
                     <p class="ftco-animate">
                         A lightweight lotion with hydroquinone and licorice root extract to brighten the complexion and
                         reduce the appearance of hyperpigmentation including brown spots and uneven skin tone.
-
                     </p>
-                    <!-- Additional content can go here -->
+                    <div class="product-info ftco-animate">                        
+                        <p class="purchase-link">
+                            Click <a href="https://www.alumiermd.ca/join" target="_blank">Here</a> to purchase directly from Alumier; using the code located on the Tarora Rejuvenation business card!
+                        </p>
+                        <p class="delivery-note">*Free Delivery Included*</p>
+                    </div>
                 </div>
                 <div class="col-md-6">
                     <img src="../images/product-images/Lightening_Lotion.jpg" alt="Alumier Lightening Lotion"
@@ -157,24 +180,12 @@
                         </ul>
                     </div>
                 </div>
-                <!-- <div class="col-md">
-                <div class="ftco-footer-widget mb-4 ml-md-4">
-                    <h2 class="ftco-heading-2">Popular Links</h2>
-                    <ul class="list-unstyled">
-                        <li><a href="#">Aromatheraphy</a></li>
-                        <li><a href="#">Skin Care</a></li>
-                        <li><a href="#">Herbal Spa</a></li>
-                        <li><a href="#">Body Massage</a></li>
-                    </ul>
-                </div>
-            </div> -->
                 <div class="col-md">
                     <div class="ftco-footer-widget mb-4">
                         <h2 class="ftco-heading-2">Quick Links</h2>
                         <ul class="list-unstyled">
                             <li><a href="../faq.html">About</a></li>
                             <li><a href="#">Our Spa</a></li>
-
                             <li><a href="../specialists.html">Specialists</a></li>
                             <li><a href="../contact.html">Contact</a></li>
                         </ul>
@@ -186,14 +197,10 @@
                         <div class="block-23 mb-3">
                             <ul>
                                 <li>
-                                    <span class="icon icon-map-marker"></span><span class="text">
-                                        50 Nolanridge Ct NW #140, Calgary, AB T3R 1W7
-                                    </span>
+                                    <span class="icon icon-map-marker"></span><span class="text">50 Nolanridge Ct NW #140, Calgary, AB T3R 1W7</span>
                                 </li>
-                                <li><a href="#"><span class="icon icon-phone"></span><span class="text">(403)
-                                            910-1741</span></a></li>
-                                <li><a href="#"><span class="icon icon-envelope"></span><span
-                                            class="text">tarorarejuvenationyyc@gmail.com</span></a></li>
+                                <li><a href="#"><span class="icon icon-phone"></span><span class="text">(403) 910-1741</span></a></li>
+                                <li><a href="#"><span class="icon icon-envelope"></span><span class="text">tarorarejuvenationyyc@gmail.com</span></a></li>
                             </ul>
                         </div>
                     </div>
@@ -203,9 +210,7 @@
                 <div class="col-md-12 text-center">
                     <p class="mb-0">
                         Copyright &copy;
-                        <script>
-                            document.write(new Date().getFullYear());
-                        </script> All rights reserved | Managed by Pulsefire Marketing
+                        <script>document.write(new Date().getFullYear());</script> All rights reserved | Managed by Pulsefire Marketing
                     </p>
                 </div>
             </div>
@@ -233,9 +238,6 @@
     <script src="../js/bootstrap-datepicker.js"></script>
     <script src="../js/jquery.timepicker.min.js"></script>
     <script src="../js/scrollax.min.js"></script>
-    <script
-        src="../https://maps.googleapis.com/maps/api/js?key=AIzaSyDY1ABMYkelKhsNxvWGnMF2Ie3LXOXf4ss&callback=initMap"
-        defer></script>
     <script src="../js/google-map.js"></script>
     <script src="../js/main.js"></script>
     <script>
@@ -260,7 +262,6 @@
 
                 // Handle mouse leave on submenu
                 submenu.addEventListener('mouseleave', function (event) {
-                    // Check if the new hovered element is not a child of the submenu
                     if (!submenu.contains(event.relatedTarget)) {
                         dropdownMenu.style.display = 'none';
                     }
@@ -268,17 +269,16 @@
 
                 // Handle click on submenu toggle
                 dropdownToggle.addEventListener('click', function (event) {
-                    event.preventDefault(); // Prevent navigating to '#'
+                    event.preventDefault();
                     if (dropdownMenu.style.display === 'block') {
                         dropdownMenu.style.display = 'none';
                     } else {
-                        closeAllSubmenus(); // Close other open submenus
+                        closeAllSubmenus();
                         dropdownMenu.style.display = 'block';
                     }
                 });
             });
 
-            // Close submenus when clicking elsewhere on the page
             document.addEventListener('click', function (event) {
                 var isClickInsideSubmenu = event.target.closest('.dropdown-submenu');
                 if (!isClickInsideSubmenu) {

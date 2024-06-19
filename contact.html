@@ -19,6 +19,18 @@
     <link rel="stylesheet" href="css/flaticon.css">
     <link rel="stylesheet" href="css/icomoon.css">
     <link rel="stylesheet" href="css/style.css">
+    <style>
+        .accordion-button {
+            background-color: #f8f9fa;
+            color: #333;
+        }
+        .accordion-button:focus {
+            box-shadow: none;
+        }
+        .accordion-item {
+            border: none;
+        }
+    </style>
 </head>
 
 <body>
@@ -229,25 +241,32 @@
                             <input type="submit" value="Send Message" class="btn btn-primary py-3 px-5">
                         </div>
                     </form>
-                    <div>
-
-                        <h2 class="h4"><br>Book Now</h2>
-                        <a href="https://tarorarejuvenation.janeapp.com/login"> <img src="images/jane.jpg"
-                                height="157px" width="135px"></a>
-                        <p>
-                            <br>Booking instructions:
-                        <ol>
-                            <li>Login or sign up.</li>
-                            <li>Click Upcoming Appointments; located at the middle left.</li>
-                            <li>Go to the middle upper right and fill out the intake form, and return to main page when
-                                completed.</li>
-                            <li>When back to the main page, go to the middle right and click "Add a Wait List Request".
-                            </li>
-                            <li>Fill in your information, what treatment you are looking for, followed by availability &
-                                leave any questions or concerns in the message box!</li>
-                            <li>Click continue at the bottom and your appointment is booked!</li>
-                        </ol>
-                        </p>
+                     <div class="container my-4">
+                        <h2 class="h4">Book Now</h2>
+                        <a href="https://tarorarejuvenation.janeapp.com/login"> 
+                            <img src="images/jane.jpg" height="157px" width="135px" class="img-fluid my-3">
+                        </a>
+                        <div class="accordion" id="bookingInstructionsAccordion">
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="headingOne">
+                                    <button class="accordion-button" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                        Booking Instructions
+                                    </button>
+                                </h2>
+                                <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#bookingInstructionsAccordion">
+                                    <div class="accordion-body">
+                                        <ol>
+                                            <li>Login or sign up.</li>
+                                            <li>Click "Upcoming Appointments" located at the middle left.</li>
+                                            <li>Go to the middle upper right, fill out the intake form, and return to the main page when completed.</li>
+                                            <li>When back on the main page, go to the middle right and click "Add a Wait List Request".</li>
+                                            <li>Fill in your information, what treatment you are looking for, and availability.</li>
+                                            <li>Click continue at the bottom and your appointment is booked!</li>
+                                        </ol>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
