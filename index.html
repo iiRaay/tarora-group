@@ -1,438 +1,708 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
+  <head>
     <title>Tarora Rejuvenation</title>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <link rel="icon" href="images/logo-bw.png" type="image/png">
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Prata&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="css/open-iconic-bootstrap.min.css">
-    <link rel="stylesheet" href="css/animate.css">
-    <link rel="stylesheet" href="css/owl.carousel.min.css">
-    <link rel="stylesheet" href="css/owl.theme.default.min.css">
-    <link rel="stylesheet" href="css/magnific-popup.css">
-    <link rel="stylesheet" href="css/aos.css">
-    <link rel="stylesheet" href="css/ionicons.min.css">
-    <link rel="stylesheet" href="css/bootstrap-datepicker.css">
-    <link rel="stylesheet" href="css/jquery.timepicker.css">
-    <link rel="stylesheet" href="css/flaticon.css">
-    <link rel="stylesheet" href="css/icomoon.css">
-    <link rel="stylesheet" href="css/style.css">
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <link rel="icon" href="images/logo-bw.png" type="image/png" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Prata&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/open-iconic-bootstrap.min.css" />
+    <link rel="stylesheet" href="css/animate.css" />
+    <link rel="stylesheet" href="css/owl.carousel.min.css" />
+    <link rel="stylesheet" href="css/owl.theme.default.min.css" />
+    <link rel="stylesheet" href="css/magnific-popup.css" />
+    <link rel="stylesheet" href="css/aos.css" />
+    <link rel="stylesheet" href="css/ionicons.min.css" />
+    <link rel="stylesheet" href="css/bootstrap-datepicker.css" />
+    <link rel="stylesheet" href="css/jquery.timepicker.css" />
+    <link rel="stylesheet" href="css/flaticon.css" />
+    <link rel="stylesheet" href="css/icomoon.css" />
+    <link rel="stylesheet" href="css/style.css" />
     <style>
-        .dropdown:hover .dropdown-menu {
-            display: block;
+      .dropdown:hover .dropdown-menu {
+        display: block;
+      }
+
+      .dropdown-submenu:hover .dropdown-menu {
+        display: block;
+      }
+
+      .dropdown-menu {
+        transition: all 0.5s ease;
+        /* Adjust the transition duration as needed */
+      }
+
+      .dropdown-submenu:hover .dropdown-menu {
+        animation: fadeIn 0.5s ease;
+        /* Adjust the animation duration as needed */
+      }
+
+      @keyframes fadeIn {
+        from {
+          opacity: 0;
         }
 
-        .dropdown-submenu:hover .dropdown-menu {
-            display: block;
+        to {
+          opacity: 1;
         }
-
-        .dropdown-menu {
-            transition: all 0.5s ease;
-            /* Adjust the transition duration as needed */
-        }
-
-        .dropdown-submenu:hover .dropdown-menu {
-            animation: fadeIn 0.5s ease;
-            /* Adjust the animation duration as needed */
-        }
-
-        @keyframes fadeIn {
-            from {
-                opacity: 0;
-            }
-
-            to {
-                opacity: 1;
-            }
-        }
+      }
     </style>
-</head>
+  </head>
 
-<body>
-    <nav class="navbar navbar-expand-lg navbar-dark ftco_navbar bg-dark ftco-navbar-light" id="ftco-navbar">
-        <div class="container">
-            <a class="navbar-brand" href="/">
-                <img src="images/logo-bw-black.png" width="200px" height="65px" />
-            </a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#ftco-nav"
-                aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="oi oi-menu"></span> Menu
-            </button>
-            <div class="collapse navbar-collapse" id="ftco-nav">
-                <ul class="navbar-nav ml-auto">
-                    <li class="nav-item active"><a href="/" class="nav-link">home</a></li>
-                    <!-- Treatments Dropdown -->
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle"  id="navbarDropdownTreatments" role="button"
-                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" data-delay="1000">
-                            Treatments
-                        </a>
-                        <ul class="dropdown-menu" aria-labelledby="navbarDropdownTreatments"
-                            style="position: absolute;">
-                            <!-- Skin Care & Rejuvenation -->
-                            <li class="dropdown-submenu" style="position: relative;">
-                                <a class="dropdown-item dropdown-toggle">Skin Care & Rejuvenation</a>
-                                <ul class="dropdown-menu"
-                                    style="display: none; position: absolute; top: 0; left: 100%; margin-top: -6px; margin-left: -1px;">
-                                    <li><a class="dropdown-item" href="microneedling.html">Microneedling</a></li>
-                                    <li><a class="dropdown-item" href="dermaplaning.html">Dermaplaning</a></li>
-                                    <li><a class="dropdown-item" href="hydrafacial.html">Hydrafacial</a></li>
-                                    <li><a class="dropdown-item" href="acneSolutionsFacial.html">Acne Solutions
-                                            Facial</a></li>
-                                    <li><a class="dropdown-item" href="chemicalPeel.html">Chemical Peel</a></li>
-                                    <li><a class="dropdown-item" href="taroraRestoreAndRejuvenate.html">Tarora Restore &
-                                            Rejuvenate</a></li>
-                                    <li><a class="dropdown-item" href="eyebrowTinting.html">Eyebrow Tinting</a></li>
-                                    <li><a class="dropdown-item" href="eyebrowLamination.html">Eyebrow Lamination</a>
-                                    </li>
-                                </ul>
-                            </li>
-                            <!-- Injectables -->
-                            <li class="dropdown-submenu" style="position: relative;">
-                                <a class="dropdown-item dropdown-toggle">Injectables</a>
-                                <ul class="dropdown-menu"
-                                    style="display: none; position: absolute; top: 0; left: 100%; margin-top: -6px; margin-left: -1px;">
-                                    <li><a class="dropdown-item" href="botox.html">Botox</a></li>
-                                    <li><a class="dropdown-item" href="dermafillers.html">Dermal Fillers</a></li>
-                                </ul>
-                            </li>
-                            <!-- Laser & Hair Removal -->
-                            <li class="dropdown-submenu" style="position: relative;">
-                                <a class="dropdown-item dropdown-toggle">Laser & Hair Removal</a>
-                                <ul class="dropdown-menu"
-                                    style="display: none; position: absolute; top: 0; left: 100%; margin-top: -6px; margin-left: -1px;">
-                                    <li><a class="dropdown-item" href="threading.html">Threading</a></li>
-                                    <li><a class="dropdown-item" href="hairRemoval.html">Laser Hair Removal</a></li>
-                                    <li><a class="dropdown-item" href="waxing.html">Waxing</a></li>
-                                </ul>
-                            </li>
-                            <!-- Advanced Skincare & Rejuvenation -->
-                            <li class="dropdown-submenu" style="position: relative;">
-                                <a class="dropdown-item dropdown-toggle">Advanced Skincare & Rejuvenation</a>
-                                <ul class="dropdown-menu"
-                                    style="display: none; position: absolute; top: 0; left: 100%; margin-top: -6px; margin-left: -1px;">
-                                    <li><a class="dropdown-item" href="morpheus8.html">Morpheus 8</a></li>
-                                    <li><a class="dropdown-item" href="lumeccaIPL.html">Lumecca IPL Facial</a></li>
-                                    <li><a class="dropdown-item" href="skinTightening.html">Forma RF Skin Tightening
-                                            Facial</a></li>
-                                </ul>
-                            </li>
-                        </ul>
+  <body>
+    <nav
+      class="navbar navbar-expand-lg navbar-dark ftco_navbar bg-dark ftco-navbar-light"
+      id="ftco-navbar"
+    >
+      <div class="container">
+        <a class="navbar-brand" href="/">
+          <img src="images/logo-bw-black.png" width="200px" height="65px" />
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#ftco-nav"
+          aria-controls="ftco-nav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="oi oi-menu"></span> Menu
+        </button>
+        <div class="collapse navbar-collapse" id="ftco-nav">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item active">
+              <a href="/" class="nav-link">home</a>
+            </li>
+            <!-- Treatments Dropdown -->
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                id="navbarDropdownTreatments"
+                role="button"
+                data-toggle="dropdown"
+                aria-haspopup="true"
+                aria-expanded="false"
+                data-delay="1000"
+              >
+                Treatments
+              </a>
+              <ul
+                class="dropdown-menu"
+                aria-labelledby="navbarDropdownTreatments"
+                style="position: absolute"
+              >
+                <!-- Skin Care & Rejuvenation -->
+                <li class="dropdown-submenu" style="position: relative">
+                  <a class="dropdown-item dropdown-toggle"
+                    >Skin Care & Rejuvenation</a
+                  >
+                  <ul
+                    class="dropdown-menu"
+                    style="
+                      display: none;
+                      position: absolute;
+                      top: 0;
+                      left: 100%;
+                      margin-top: -6px;
+                      margin-left: -1px;
+                    "
+                  >
+                    <li>
+                      <a class="dropdown-item" href="microneedling.html"
+                        >Microneedling</a
+                      >
                     </li>
-                    <li class="nav-item"><a href="products.html" class="nav-link">Products</a></li>
-                    <li class="nav-item"><a href="specialists.html" class="nav-link">Our Team</a></li>
-                    <li class="nav-item"><a href="faq.html" class="nav-link">FAQ</a></li>
-                    <li class="nav-item"><a href="contact.html" class="nav-link">About & Consultation</a></li>
-                </ul>
-            </div>
+                    <li>
+                      <a class="dropdown-item" href="dermaplaning.html"
+                        >Dermaplaning</a
+                      >
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="hydrafacial.html"
+                        >Hydrafacial</a
+                      >
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="acneSolutionsFacial.html"
+                        >Acne Solutions Facial</a
+                      >
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="chemicalPeel.html"
+                        >Chemical Peel</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="taroraRestoreAndRejuvenate.html"
+                        >Tarora Restore & Rejuvenate</a
+                      >
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="eyebrowTinting.html"
+                        >Eyebrow Tinting</a
+                      >
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="eyebrowLamination.html"
+                        >Eyebrow Lamination</a
+                      >
+                    </li>
+                  </ul>
+                </li>
+                <!-- Injectables -->
+                <li class="dropdown-submenu" style="position: relative">
+                  <a class="dropdown-item dropdown-toggle">Injectables</a>
+                  <ul
+                    class="dropdown-menu"
+                    style="
+                      display: none;
+                      position: absolute;
+                      top: 0;
+                      left: 100%;
+                      margin-top: -6px;
+                      margin-left: -1px;
+                    "
+                  >
+                    <li>
+                      <a class="dropdown-item" href="botox.html">Botox</a>
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="dermafillers.html"
+                        >Dermal Fillers</a
+                      >
+                    </li>
+                  </ul>
+                </li>
+                <!-- Laser & Hair Removal -->
+                <li class="dropdown-submenu" style="position: relative">
+                  <a class="dropdown-item dropdown-toggle"
+                    >Laser & Hair Removal</a
+                  >
+                  <ul
+                    class="dropdown-menu"
+                    style="
+                      display: none;
+                      position: absolute;
+                      top: 0;
+                      left: 100%;
+                      margin-top: -6px;
+                      margin-left: -1px;
+                    "
+                  >
+                    <li>
+                      <a class="dropdown-item" href="threading.html"
+                        >Threading</a
+                      >
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="hairRemoval.html"
+                        >Laser Hair Removal</a
+                      >
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="waxing.html">Waxing</a>
+                    </li>
+                  </ul>
+                </li>
+                <!-- Advanced Skincare & Rejuvenation -->
+                <li class="dropdown-submenu" style="position: relative">
+                  <a class="dropdown-item dropdown-toggle"
+                    >Advanced Skincare & Rejuvenation</a
+                  >
+                  <ul
+                    class="dropdown-menu"
+                    style="
+                      display: none;
+                      position: absolute;
+                      top: 0;
+                      left: 100%;
+                      margin-top: -6px;
+                      margin-left: -1px;
+                    "
+                  >
+                    <li>
+                      <a class="dropdown-item" href="morpheus8.html"
+                        >Morpheus 8</a
+                      >
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="lumeccaIPL.html"
+                        >Lumecca IPL Facial</a
+                      >
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="skinTightening.html"
+                        >Forma RF Skin Tightening Facial</a
+                      >
+                    </li>
+                  </ul>
+                </li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a href="products.html" class="nav-link">Products</a>
+            </li>
+            <li class="nav-item">
+              <a href="specialists.html" class="nav-link">Our Team</a>
+            </li>
+            <li class="nav-item">
+              <a href="faq.html" class="nav-link">FAQ</a>
+            </li>
+            <li class="nav-item">
+              <a href="contact.html" class="nav-link">About & Consultation</a>
+            </li>
+          </ul>
         </div>
+      </div>
     </nav>
     <!-- END nav -->
-    <section class="hero-wrap js-fullheight" style="position: relative;">
-        <video autoplay loop muted playsinline class="video-background">
-            <source src="images/opening-cropped-vid.webm" type="video/webm">
-            Your browser does not support the video tag.
-        </video>
-        <div class="overlay" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; z-index: 0;"></div>
-        <div class="container" style="position: relative; z-index: 1;">
-            <div class="row no-gutters slider-text js-fullheight align-items-center justify-content-center">
-                <div class="col-md-10 ftco-animate text-center">
-                    <div class="icon">
-                        <span class="flaticon-lotus"></span>
-                    </div>
-                    <h1>Tarora Rejuvenation</h1>
-                    <div class="row justify-content-center">
-                        <div class="col-md-7 mb-3">
-                            <p>Realize the skin of your dreams</p>
-                        </div>
-                    </div>
-                    <p>
-                        <a href="contact.html" class="btn btn-primary p-3 px-5 py-4 mr-md-2">Get in Touch</a>
-                        <!-- <a href="contact.html" class="btn btn-outline-primary p-3 px-5 py-4 ml-md-2">Contact</a> -->
-                    </p>
-                </div>
+    <section class="hero-wrap js-fullheight" style="position: relative">
+      <video autoplay loop muted playsinline class="video-background">
+        <source src="images/opening-cropped-vid.webm" type="video/webm" />
+        Your browser does not support the video tag.
+      </video>
+      <div
+        class="overlay"
+        style="
+          position: absolute;
+          top: 0;
+          left: 0;
+          width: 100%;
+          height: 100%;
+          z-index: 0;
+        "
+      ></div>
+      <div class="container" style="position: relative; z-index: 1">
+        <div
+          class="row no-gutters slider-text js-fullheight align-items-center justify-content-center"
+        >
+          <div class="col-md-10 ftco-animate text-center">
+            <div class="icon">
+              <span class="flaticon-lotus"></span>
             </div>
+            <h1>Tarora Rejuvenation</h1>
+            <div class="row justify-content-center">
+              <div class="col-md-7 mb-3">
+                <p>Realize the skin of your dreams</p>
+              </div>
+            </div>
+            <p>
+              <a
+                href="contact.html"
+                class="btn btn-primary p-3 px-5 py-4 mr-md-2"
+                >Get in Touch</a
+              >
+              <!-- <a href="contact.html" class="btn btn-outline-primary p-3 px-5 py-4 ml-md-2">Contact</a> -->
+            </p>
+          </div>
         </div>
+      </div>
     </section>
     <section class="ftco-section ftco-section-services bg-light">
-        <div class="container-fluid px-md-5">
-            <div id="carouselServices" class="carousel slide" data-ride="carousel" data-touch="true">
-                <div class="carousel-inner">
-                    <!-- Carousel item 1 -->
-                    <div class="carousel-item active">
-                        <div class="row">
-                            <!-- Content for Element 1 to 4 (Page 1) -->
-                            <div class="col-md-3">
-                                <div class="services text-center ftco-animate">
-                                    <!-- Your content for Element 1 here -->
-                                    <a href="botox.html">
-                                        <div class="icon d-flex justify-content-center align-items-center">
-                                            <img src="images/carousel-images/botox.png"
-                                                style="width: 160px; height: 160px;">
-                                        </div>
-                                        <div class="text mt-3">
-                                            <h3>Botox</h3>
-                                        </div>
-                                    </a>
-                                </div>
-                            </div>
-                            <div class="col-md-3">
-                                <div class="services text-center ftco-animate">
-                                    <!-- Your content for Element 2 here -->
-                                    <a href="dermafillers.html">
-                                        <div class="icon d-flex justify-content-center align-items-center">
-                                            <img src="images/carousel-images/derma-fillers.png"
-                                                style="width: 160px; height: 160px;">
-                                        </div>
-                                        <div class="text mt-3">
-                                            <h3>Derma Fillers</h3>
-                                        </div>
-                                    </a>
-                                </div>
-                            </div>
-                            <div class="col-md-3">
-                                <div class="services text-center ftco-animate">
-                                    <!-- Your content for Element 3 here -->
-                                    <a href="dermaplaning.html">
-                                        <div class="icon d-flex justify-content-center align-items-center">
-                                            <img src="images/carousel-images/dermaplaning.png"
-                                                style="width: 160px; height: 160px;">
-                                        </div>
-                                        <div class="text mt-3">
-                                            <h3>Dermaplaning</h3>
-                                        </div>
-                                    </a>
-                                </div>
-                            </div>
-                            <div class="col-md-3">
-                                <div class="services text-center ftco-animate">
-                                    <!-- Your content for Element 4 here -->
-                                    <a href="eyebrowLamination.html">
-                                        <div class="icon d-flex justify-content-center align-items-center">
-                                            <img src="images/carousel-images/eyebrow-lamination.png"
-                                                style="width: 160px; height: 160px;">
-                                        </div>
-                                        <div class="text mt-3">
-                                            <h3>Eyebrow Lamination</h3>
-                                        </div>
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- Carousel item 2 -->
-                    <div class="carousel-item">
-                        <div class="row">
-                            <!-- Content for Element 5 to 8 (Page 2) -->
-                            <div class="col-md-3">
-                                <div class="services text-center ftco-animate">
-                                    <!-- Your content for Element 5 here -->
-                                    <a href="eyebrowTinting.html">
-                                        <div class="icon d-flex justify-content-center align-items-center">
-                                            <img src="images/carousel-images/eyebrow-tinting.jpg"
-                                                style="width: 160px; height: 160px;">
-                                        </div>
-                                        <div class="text mt-3">
-                                            <h3>Eyebrow Tinting</h3>
-                                        </div>
-                                    </a>
-                                </div>
-                            </div>
-                            <div class="col-md-3">
-                                <div class="services text-center ftco-animate">
-                                    <!-- Your content for Element 6 here -->
-                                    <a href="facial.html">
-                                        <div class="icon d-flex justify-content-center align-items-center">
-                                            <img src="images/carousel-images/facial.png"
-                                                style="width: 160px; height: 160px;">
-                                        </div>
-                                        <div class="text mt-3">
-                                            <h3>Facial</h3>
-                                        </div>
-                                    </a>
-                                </div>
-                            </div>
-                            <div class="col-md-3">
-                                <div class="services text-center ftco-animate">
-                                    <!-- Your content for Element 7 here -->
-                                    <a href="hairRemoval.html">
-                                        <div class="icon d-flex justify-content-center align-items-center">
-                                            <img src="images/carousel-images/hair-removal.png"
-                                                style="width: 160px; height: 160px;">
-                                        </div>
-                                        <div class="text mt-3">
-                                            <h3>Hair Removal</h3>
-                                        </div>
-                                    </a>
-                                </div>
-                            </div>
-                            <div class="col-md-3">
-                                <div class="services text-center ftco-animate">
-                                    <!-- Your content for Element 8 here -->
-                                    <a href="microneedling.html">
-                                        <div class="icon d-flex justify-content-center align-items-center">
-                                            <img src="images/carousel-images/microneedling.png"
-                                                style="width: 160px; height: 160px;">
-                                        </div>
-                                        <div class="text mt-3">
-                                            <h3>Microneedling</h3>
-                                        </div>
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- Carousel item 3 -->
-                    <div class="carousel-item">
-                        <div class="row">
-                            <!-- Content for Element 5 to 8 (Page 2) -->
-                            <div class="col-md-3">
-                                <div class="services text-center ftco-animate">
-                                    <!-- Your content for Element 5 here -->
-                                    <a href="skinTightening.html">
-                                        <div class="icon d-flex justify-content-center align-items-center">
-                                            <img src="images/carousel-images/skin-tightening.png"
-                                                style="width: 160px; height: 160px;">
-                                        </div>
-                                        <div class="text mt-3">
-                                            <h3>Skin Tightening</h3>
-                                        </div>
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- Add more carousel items as needed -->
+      <div class="container-fluid px-md-5">
+        <div
+          id="carouselServices"
+          class="carousel slide"
+          data-ride="carousel"
+          data-touch="true"
+        >
+          <div class="carousel-inner">
+            <!-- Carousel item 1 -->
+            <div class="carousel-item active">
+              <div class="row">
+                <!-- Content for Element 1 to 4 (Page 1) -->
+                <div class="col-md-3">
+                  <div class="services text-center ftco-animate">
+                    <!-- Your content for Element 1 here -->
+                    <a href="botox.html">
+                      <div
+                        class="icon d-flex justify-content-center align-items-center"
+                      >
+                        <img
+                          src="images/carousel-images/botox.png"
+                          style="width: 160px; height: 160px"
+                        />
+                      </div>
+                      <div class="text mt-3">
+                        <h3>Botox</h3>
+                      </div>
+                    </a>
+                  </div>
                 </div>
-                <!-- Carousel control arrows -->
-                <a class="carousel-control-prev" href="#carouselServices" role="button" data-slide="prev">
-                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                    <span class="sr-only">Previous</span>
-                </a>
-                <a class="carousel-control-next" href="#carouselServices" role="button" data-slide="next">
-                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                    <span class="sr-only">Next</span>
-                </a>
+                <div class="col-md-3">
+                  <div class="services text-center ftco-animate">
+                    <!-- Your content for Element 2 here -->
+                    <a href="dermafillers.html">
+                      <div
+                        class="icon d-flex justify-content-center align-items-center"
+                      >
+                        <img
+                          src="images/carousel-images/derma-fillers.png"
+                          style="width: 160px; height: 160px"
+                        />
+                      </div>
+                      <div class="text mt-3">
+                        <h3>Derma Fillers</h3>
+                      </div>
+                    </a>
+                  </div>
+                </div>
+                <div class="col-md-3">
+                  <div class="services text-center ftco-animate">
+                    <!-- Your content for Element 3 here -->
+                    <a href="dermaplaning.html">
+                      <div
+                        class="icon d-flex justify-content-center align-items-center"
+                      >
+                        <img
+                          src="images/carousel-images/dermaplaning.png"
+                          style="width: 160px; height: 160px"
+                        />
+                      </div>
+                      <div class="text mt-3">
+                        <h3>Dermaplaning</h3>
+                      </div>
+                    </a>
+                  </div>
+                </div>
+                <div class="col-md-3">
+                  <div class="services text-center ftco-animate">
+                    <!-- Your content for Element 4 here -->
+                    <a href="eyebrowLamination.html">
+                      <div
+                        class="icon d-flex justify-content-center align-items-center"
+                      >
+                        <img
+                          src="images/carousel-images/eyebrow-lamination.png"
+                          style="width: 160px; height: 160px"
+                        />
+                      </div>
+                      <div class="text mt-3">
+                        <h3>Eyebrow Lamination</h3>
+                      </div>
+                    </a>
+                  </div>
+                </div>
+              </div>
             </div>
+            <!-- Carousel item 2 -->
+            <div class="carousel-item">
+              <div class="row">
+                <!-- Content for Element 5 to 8 (Page 2) -->
+                <div class="col-md-3">
+                  <div class="services text-center ftco-animate">
+                    <!-- Your content for Element 5 here -->
+                    <a href="eyebrowTinting.html">
+                      <div
+                        class="icon d-flex justify-content-center align-items-center"
+                      >
+                        <img
+                          src="images/carousel-images/eyebrow-tinting.jpg"
+                          style="width: 160px; height: 160px"
+                        />
+                      </div>
+                      <div class="text mt-3">
+                        <h3>Eyebrow Tinting</h3>
+                      </div>
+                    </a>
+                  </div>
+                </div>
+                <div class="col-md-3">
+                  <div class="services text-center ftco-animate">
+                    <!-- Your content for Element 6 here -->
+                    <a href="facial.html">
+                      <div
+                        class="icon d-flex justify-content-center align-items-center"
+                      >
+                        <img
+                          src="images/carousel-images/facial.png"
+                          style="width: 160px; height: 160px"
+                        />
+                      </div>
+                      <div class="text mt-3">
+                        <h3>Facial</h3>
+                      </div>
+                    </a>
+                  </div>
+                </div>
+                <div class="col-md-3">
+                  <div class="services text-center ftco-animate">
+                    <!-- Your content for Element 7 here -->
+                    <a href="hairRemoval.html">
+                      <div
+                        class="icon d-flex justify-content-center align-items-center"
+                      >
+                        <img
+                          src="images/carousel-images/hair-removal.png"
+                          style="width: 160px; height: 160px"
+                        />
+                      </div>
+                      <div class="text mt-3">
+                        <h3>Hair Removal</h3>
+                      </div>
+                    </a>
+                  </div>
+                </div>
+                <div class="col-md-3">
+                  <div class="services text-center ftco-animate">
+                    <!-- Your content for Element 8 here -->
+                    <a href="microneedling.html">
+                      <div
+                        class="icon d-flex justify-content-center align-items-center"
+                      >
+                        <img
+                          src="images/carousel-images/microneedling.png"
+                          style="width: 160px; height: 160px"
+                        />
+                      </div>
+                      <div class="text mt-3">
+                        <h3>Microneedling</h3>
+                      </div>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- Carousel item 3 -->
+            <div class="carousel-item">
+              <div class="row">
+                <!-- Content for Element 5 to 8 (Page 2) -->
+                <div class="col-md-3">
+                  <div class="services text-center ftco-animate">
+                    <!-- Your content for Element 5 here -->
+                    <a href="skinTightening.html">
+                      <div
+                        class="icon d-flex justify-content-center align-items-center"
+                      >
+                        <img
+                          src="images/carousel-images/skin-tightening.png"
+                          style="width: 160px; height: 160px"
+                        />
+                      </div>
+                      <div class="text mt-3">
+                        <h3>Skin Tightening</h3>
+                      </div>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- Add more carousel items as needed -->
+          </div>
+          <!-- Carousel control arrows -->
+          <a
+            class="carousel-control-prev"
+            href="#carouselServices"
+            role="button"
+            data-slide="prev"
+          >
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+          </a>
+          <a
+            class="carousel-control-next"
+            href="#carouselServices"
+            role="button"
+            data-slide="next"
+          >
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+          </a>
         </div>
+      </div>
     </section>
-    <section id="about-section" class="ftco-section ftco-intro" style="background-image: url(images/intro.jpg);">
-        <div class="container">
-            <div class="row justify-content-end">
-                <div class="col-md-6">
-                    <div class="heading-section ftco-animate">
-                        <h2 class="mb-4" style="text-align: center;">About Us</h2>
-                    </div>
-                    <p class="ftco-animate" style="font-weight: 600; color: #555;">
-                    <p>Dear Guests,</p>
-                    <p>I am Meena Bagga, the founder and proprietor of Tarora Rejuvenation. With an extensive background
-                        spanning over two decades in the beauty and wellness industry, I am deeply committed to the
-                        pursuit of enhancing the skin's health and radiance for our valued clientele.</p>
-                    <p>At the heart of my practice lies an unwavering dedication to providing top-tier services that
-                        prioritize quality, ensuring each client's comfort and leaving them feeling truly beautiful. We
-                        take pride in offering a range of medical-grade products and services, meticulously designed to
-                        inspire confidence and rejuvenation.</p>
-                    <p>We look forward to the pleasure of welcoming you soon to Tarora Rejuvenation.</p>
-                </div>
+    <section
+      id="about-section"
+      class="ftco-section ftco-intro"
+      style="background-image: url(images/intro.jpg)"
+    >
+      <div class="container">
+        <div class="row justify-content-end">
+          <div class="col-md-6">
+            <div class="heading-section ftco-animate">
+              <h2 class="mb-4" style="text-align: center">About Us</h2>
             </div>
+            <p class="ftco-animate" style="font-weight: 600; color: #555"></p>
+            <p>Dear Guests,</p>
+            <p>
+              I am Meena Bagga, the founder and proprietor of Tarora
+              Rejuvenation. With an extensive background spanning over two
+              decades in the beauty and wellness industry, I am deeply committed
+              to the pursuit of enhancing the skin's health and radiance for our
+              valued clientele.
+            </p>
+            <p>
+              At the heart of my practice lies an unwavering dedication to
+              providing top-tier services that prioritize quality, ensuring each
+              client's comfort and leaving them feeling truly beautiful. We take
+              pride in offering a range of medical-grade products and services,
+              meticulously designed to inspire confidence and rejuvenation.
+            </p>
+            <p>
+              We look forward to the pleasure of welcoming you soon to Tarora
+              Rejuvenation.
+            </p>
+          </div>
         </div>
+      </div>
     </section>
     <section class="ftco-gallery ftco-section-gallery">
-        <div class="container">
-            <div class="row justify-content-center mb-5 pb-3">
-                <div class="col-md-7 heading-section ftco-animate text-center">
-                    <h3 class="subheading">Gallery</h3>
-                    <h2 class="mb-1">See the latest photos</h2>
-                </div>
-            </div>
-            <script src="https://cdn.lightwidget.com/widgets/lightwidget.js"></script><iframe
-                src="https://cdn.lightwidget.com/widgets/97e66287863c591381ca06e13ed9a6af.html" scrolling="no"
-                allowtransparency="true" class="lightwidget-widget"
-                style="width:100%;border:0;overflow:hidden;"></iframe>
+      <div class="container">
+        <div class="row justify-content-center mb-5 pb-3">
+          <div class="col-md-7 heading-section ftco-animate text-center">
+            <h3 class="subheading">Gallery</h3>
+            <h2 class="mb-1">See the latest photos</h2>
+          </div>
         </div>
+        <script src="https://cdn.lightwidget.com/widgets/lightwidget.js"></script>
+        <iframe
+          src="https://cdn.lightwidget.com/widgets/97e66287863c591381ca06e13ed9a6af.html"
+          scrolling="no"
+          allowtransparency="true"
+          class="lightwidget-widget"
+          style="width: 100%; border: 0; overflow: hidden"
+        ></iframe>
+      </div>
     </section>
-    <section class="ftco-counter img" id="section-counter" style="background-image: url(images/bg_3.jpg);"
-        data-stellar-background-ratio="0.5">
-        <div class="overlay"></div>
-        <div class="container">
-            <div class="row justify-content-center">
-                <div class="col-md-10">
-                    <div class="row">
-                        <div class="col-md-12 d-flex justify-content-center counter-wrap ftco-animate">
-                            <div class="col-md-7 heading-section ftco-animate text-center">
-                                <h2 class="mb-2">Age Gracefully</h2>
-                                <h3 class="subheading"><a href="contact.html">Contact Us</a></h3>
-                            </div>
-                        </div>
-                    </div>
+    <section
+      class="ftco-counter img"
+      id="section-counter"
+      style="background-image: url(images/bg_3.jpg)"
+      data-stellar-background-ratio="0.5"
+    >
+      <div class="overlay"></div>
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-md-10">
+            <div class="row">
+              <div
+                class="col-md-12 d-flex justify-content-center counter-wrap ftco-animate"
+              >
+                <div class="col-md-7 heading-section ftco-animate text-center">
+                  <h2 class="mb-2">Age Gracefully</h2>
+                  <h3 class="subheading">
+                    <a href="contact.html">Contact Us</a>
+                  </h3>
                 </div>
+              </div>
             </div>
+          </div>
         </div>
+      </div>
     </section>
     <!-- <div id="footer-element"></div> -->
     <footer class="ftco-footer ftco-section">
-        <div class="container">
-            <div class="row d-flex">
-                <div class="col-md">
-                    <div class="ftco-footer-widget mb-4">
-                        <h2 class="ftco-heading-2">Tarora Rejuvenation</h2>
-                        <p>Realize the skin of your dreams</p>
-                        <ul class="ftco-footer-social list-unstyled float-lft mt-3">
-                            <li class="ftco-animate"><a href="https://www.facebook.com/tarorarejuvenation/"><span
-                                        class="icon-facebook"></span></a></li>
-                            <li class="ftco-animate"><a href="https://www.instagram.com/tarorarejuvenation/"><span
-                                        class="icon-instagram"></span></a></li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="col-md">
-                    <div class="ftco-footer-widget mb-4">
-                        <h2 class="ftco-heading-2">Quick Links</h2>
-                        <ul class="list-unstyled">
-                            <li><a href="faq.html">About</a></li>
-                            <li><a href="#">Our Spa</a></li>
-                            <li><a href="specialists.html">Specialists</a></li>
-                            <li><a href="contact.html">Contact</a></li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="col-md">
-                    <div class="ftco-footer-widget mb-4">
-                        <h2 class="ftco-heading-2">Have a Question?</h2>
-                        <div class="block-23 mb-3">
-                            <ul>
-                                <li><span class="icon icon-map-marker"></span><span class="text">
-                                        50 Nolanridge Ct NW #140, Calgary, AB T3R 1W7</span></li>
-                                <li><a href="#"><span class="icon icon-phone"></span><span class="text">(403)
-                                            910-1741</span></a></li>
-                                <li><a href="#"><span class="icon icon-envelope"></span><span
-                                            class="text">tarorarejuvenationyyc@gmail.com</span></a></li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
+      <div class="container">
+        <div class="row d-flex">
+          <div class="col-md">
+            <div class="ftco-footer-widget mb-4">
+              <h2 class="ftco-heading-2">Tarora Rejuvenation</h2>
+              <p>Realize the skin of your dreams</p>
+              <ul class="ftco-footer-social list-unstyled float-lft mt-3">
+                <li class="ftco-animate">
+                  <a href="https://www.facebook.com/tarorarejuvenation/"
+                    ><span class="icon-facebook"></span
+                  ></a>
+                </li>
+                <li class="ftco-animate">
+                  <a href="https://www.instagram.com/tarorarejuvenation/"
+                    ><span class="icon-instagram"></span
+                  ></a>
+                </li>
+              </ul>
             </div>
-            <div class="row">
-                <div class="col-md-12 text-center">
-                    <p class="mb-0">
-                        Copyright &copy;
-                        <script>
-                            document.write(new Date().getFullYear());
-                        </script> All rights reserved | Managed by Pulsefire Marketing
-                    </p>
-                </div>
+          </div>
+          <div class="col-md">
+            <div class="ftco-footer-widget mb-4">
+              <h2 class="ftco-heading-2">Quick Links</h2>
+              <ul class="list-unstyled">
+                <li><a href="faq.html">About</a></li>
+                <li><a href="#">Our Spa</a></li>
+                <li><a href="specialists.html">Specialists</a></li>
+                <li><a href="contact.html">Contact</a></li>
+              </ul>
             </div>
+          </div>
+          <div class="col-md">
+            <div class="ftco-footer-widget mb-4">
+              <h2 class="ftco-heading-2">Have a Question?</h2>
+              <div class="block-23 mb-3">
+                <ul>
+                  <li>
+                    <span class="icon icon-map-marker"></span
+                    ><span class="text">
+                      50 Nolanridge Ct NW #140, Calgary, AB T3R 1W7</span
+                    >
+                  </li>
+                  <li>
+                    <a href="#"
+                      ><span class="icon icon-phone"></span
+                      ><span class="text">(403) 910-1741</span></a
+                    >
+                  </li>
+                  <li>
+                    <a href="#"
+                      ><span class="icon icon-envelope"></span
+                      ><span class="text"
+                        >tarorarejuvenationyyc@gmail.com</span
+                      ></a
+                    >
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
         </div>
+        <div class="row">
+          <div class="col-md-12 text-center">
+            <p class="mb-0">
+              Copyright &copy;
+              <script>
+                document.write(new Date().getFullYear());
+              </script>
+              All rights reserved | Managed by Pulsefire Marketing
+            </p>
+          </div>
+        </div>
+      </div>
     </footer>
     <!-- loader -->
-    <div id="ftco-loader" class="show fullscreen"><svg class="circular" width="48px" height="48px">
-            <circle class="path-bg" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke="#eeeeee" />
-            <circle class="path" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke-miterlimit="10"
-                stroke="#F96D00" />
-        </svg></div>
+    <div id="ftco-loader" class="show fullscreen">
+      <svg class="circular" width="48px" height="48px">
+        <circle
+          class="path-bg"
+          cx="24"
+          cy="24"
+          r="22"
+          fill="none"
+          stroke-width="4"
+          stroke="#eeeeee"
+        />
+        <circle
+          class="path"
+          cx="24"
+          cy="24"
+          r="22"
+          fill="none"
+          stroke-width="4"
+          stroke-miterlimit="10"
+          stroke="#F96D00"
+        />
+      </svg>
+    </div>
     <script src="js/jquery.min.js"></script>
     <script src="js/jquery-migrate-3.0.1.min.js"></script>
     <script src="js/popper.min.js"></script>
@@ -447,71 +717,71 @@
     <script src="js/bootstrap-datepicker.js"></script>
     <script src="js/jquery.timepicker.min.js"></script>
     <script src="js/scrollax.min.js"></script>
-    <script
-        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBVWaKrjvy3MaE7SQ74_uJiULgl1JY0H2s&sensor=false"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBVWaKrjvy3MaE7SQ74_uJiULgl1JY0H2s&sensor=false"></script>
     <script src="js/google-map.js"></script>
     <script src="js/main.js"></script>
     <script src="js/getFooter.js"></script>
     <script>
-        document.querySelectorAll('.dropdown').forEach(function (dropdown) {
-            dropdown.addEventListener('mouseenter', function () {
-                this.classList.add('show');
-            });
-
-            dropdown.addEventListener('mouseleave', function () {
-                this.classList.remove('show');
-            });
+      document.querySelectorAll(".dropdown").forEach(function (dropdown) {
+        dropdown.addEventListener("mouseenter", function () {
+          this.classList.add("show");
         });
+
+        dropdown.addEventListener("mouseleave", function () {
+          this.classList.remove("show");
+        });
+      });
     </script>
     <script>
-        document.addEventListener('DOMContentLoaded', function () {
-            var submenus = document.querySelectorAll('.dropdown-submenu');
+      document.addEventListener("DOMContentLoaded", function () {
+        var submenus = document.querySelectorAll(".dropdown-submenu");
 
-            // Function to close all submenus
-            function closeAllSubmenus() {
-                document.querySelectorAll('.dropdown-submenu .dropdown-menu').forEach(function (submenu) {
-                    submenu.style.display = 'none';
-                });
+        // Function to close all submenus
+        function closeAllSubmenus() {
+          document
+            .querySelectorAll(".dropdown-submenu .dropdown-menu")
+            .forEach(function (submenu) {
+              submenu.style.display = "none";
+            });
+        }
+
+        submenus.forEach(function (submenu) {
+          var dropdownToggle = submenu.querySelector(".dropdown-toggle");
+          var dropdownMenu = submenu.querySelector(".dropdown-menu");
+
+          // Handle mouse enter on submenu
+          submenu.addEventListener("mouseenter", function () {
+            dropdownMenu.style.display = "block";
+          });
+
+          // Handle mouse leave on submenu
+          submenu.addEventListener("mouseleave", function (event) {
+            // Check if the new hovered element is not a child of the submenu
+            if (!submenu.contains(event.relatedTarget)) {
+              dropdownMenu.style.display = "none";
             }
+          });
 
-            submenus.forEach(function (submenu) {
-                var dropdownToggle = submenu.querySelector('.dropdown-toggle');
-                var dropdownMenu = submenu.querySelector('.dropdown-menu');
-
-                // Handle mouse enter on submenu
-                submenu.addEventListener('mouseenter', function () {
-                    dropdownMenu.style.display = 'block';
-                });
-
-                // Handle mouse leave on submenu
-                submenu.addEventListener('mouseleave', function (event) {
-                    // Check if the new hovered element is not a child of the submenu
-                    if (!submenu.contains(event.relatedTarget)) {
-                        dropdownMenu.style.display = 'none';
-                    }
-                });
-
-                // Handle click on submenu toggle
-                dropdownToggle.addEventListener('click', function (event) {
-                    event.preventDefault(); // Prevent navigating to '#'
-                    if (dropdownMenu.style.display === 'block') {
-                        dropdownMenu.style.display = 'none';
-                    } else {
-                        closeAllSubmenus(); // Close other open submenus
-                        dropdownMenu.style.display = 'block';
-                    }
-                });
-            });
-
-            // Close submenus when clicking elsewhere on the page
-            document.addEventListener('click', function (event) {
-                var isClickInsideSubmenu = event.target.closest('.dropdown-submenu');
-                if (!isClickInsideSubmenu) {
-                    closeAllSubmenus();
-                }
-            });
+          // Handle click on submenu toggle
+          dropdownToggle.addEventListener("click", function (event) {
+            event.preventDefault(); // Prevent navigating to '#'
+            if (dropdownMenu.style.display === "block") {
+              dropdownMenu.style.display = "none";
+            } else {
+              closeAllSubmenus(); // Close other open submenus
+              dropdownMenu.style.display = "block";
+            }
+          });
         });
-    </script>
-</body>
 
+        // Close submenus when clicking elsewhere on the page
+        document.addEventListener("click", function (event) {
+          var isClickInsideSubmenu = event.target.closest(".dropdown-submenu");
+          if (!isClickInsideSubmenu) {
+            closeAllSubmenus();
+          }
+        });
+      });
+    </script>
+  </body>
 </html>
