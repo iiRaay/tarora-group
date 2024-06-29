@@ -16,8 +16,8 @@
                      <li class="nav-item"><a href="/" class="nav-link">home</a></li>[m
                      <!-- Treatments Dropdown -->[m
                      <li class="nav-item dropdown">[m
-[31m-                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownTreatments" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">[m
-[32m+[m[32m                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownTreatments" role="button"[m
+[31m-                        <a class="nav-link dropdown-toggle"  id="navbarDropdownTreatments" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">[m
+[32m+[m[32m                        <a class="nav-link dropdown-toggle"  id="navbarDropdownTreatments" role="button"[m
 [32m+[m[32m                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">[m
                              Treatments[m
                          </a>[m
@@ -26,7 +26,7 @@
 [32m+[m[32m                            style="position: absolute;">[m
                              <!-- Skin Care & Rejuvenation -->[m
                              <li class="dropdown-submenu" style="position: relative;">[m
-                                 <a class="dropdown-item dropdown-toggle" href="#">Skin Care & Rejuvenation</a>[m
+                                 <a class="dropdown-item dropdown-toggle">Skin Care & Rejuvenation</a>[m
 [31m-                                <ul class="dropdown-menu" style="display: none; position: absolute; top: 0; left: 100%; margin-top: -6px; margin-left: -1px;">[m
 [32m+[m[32m                                <ul class="dropdown-menu"[m
 [32m+[m[32m                                    style="display: none; position: absolute; top: 0; left: 100%; margin-top: -6px; margin-left: -1px;">[m
@@ -48,7 +48,7 @@
                              </li>[m
                              <!-- Injectables -->[m
                              <li class="dropdown-submenu" style="position: relative;">[m
-                                 <a class="dropdown-item dropdown-toggle" href="#">Injectables</a>[m
+                                 <a class="dropdown-item dropdown-toggle">Injectables</a>[m
 [31m-                                <ul class="dropdown-menu" style="display: none; position: absolute; top: 0; left: 100%; margin-top: -6px; margin-left: -1px;">[m
 [32m+[m[32m                                <ul class="dropdown-menu"[m
 [32m+[m[32m                                    style="display: none; position: absolute; top: 0; left: 100%; margin-top: -6px; margin-left: -1px;">[m
@@ -58,7 +58,7 @@
 [36m@@ -64,7 +72,8 @@[m
                              <!-- Laser & Hair Removal -->[m
                              <li class="dropdown-submenu" style="position: relative;">[m
-                                 <a class="dropdown-item dropdown-toggle" href="#">Laser & Hair Removal</a>[m
+                                 <a class="dropdown-item dropdown-toggle">Laser & Hair Removal</a>[m
 [31m-                                <ul class="dropdown-menu" style="display: none; position: absolute; top: 0; left: 100%; margin-top: -6px; margin-left: -1px;">[m
 [32m+[m[32m                                <ul class="dropdown-menu"[m
 [32m+[m[32m                                    style="display: none; position: absolute; top: 0; left: 100%; margin-top: -6px; margin-left: -1px;">[m
@@ -68,7 +68,7 @@
 [36m@@ -73,10 +82,12 @@[m
                              <!-- Advanced Skincare & Rejuvenation -->[m
                              <li class="dropdown-submenu" style="position: relative;">[m
-                                 <a class="dropdown-item dropdown-toggle" href="#">Advanced Skincare & Rejuvenation</a>[m
+                                 <a class="dropdown-item dropdown-toggle">Advanced Skincare & Rejuvenation</a>[m
 [31m-                                <ul class="dropdown-menu" style="display: none; position: absolute; top: 0; left: 100%; margin-top: -6px; margin-left: -1px;">[m
 [32m+[m[32m                                <ul class="dropdown-menu"[m
 [32m+[m[32m                                    style="display: none; position: absolute; top: 0; left: 100%; margin-top: -6px; margin-left: -1px;">[m
