@@ -14183,5 +14183,7 @@ input {
   .modal-dialog {
     width: 75%; 
     height: auto;
+    margin-left:auto;
+    margin-right:auto;
   }
 }
