@@ -14153,6 +14153,7 @@ textarea.form-control {
   background-color: #141414;
   border-bottom-right-radius: 10px;
   border-bottom-left-radius: 10px;
+  overflow-x: auto;
 }
 
 .modal-content{
@@ -14180,6 +14181,14 @@ input {
 
 .modal-dialog{
   width: auto;
+  max-width: 100%;
   height: auto;
   
+
+}
+@media (max-width: 576px) {
+  .modal-dialog {
+    width: 75%; 
+    height: auto;
+  }
 }
