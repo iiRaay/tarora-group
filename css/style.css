@@ -14179,13 +14179,6 @@ input {
   background-color:#d39e00;
 }
 
-.modal-dialog{
-  width: auto;
-  max-width: 100%;
-  height: auto;
-  
-
-}
 @media (max-width: 576px) {
   .modal-dialog {
     width: 75%; 
