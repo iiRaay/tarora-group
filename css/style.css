@@ -14136,3 +14136,50 @@ textarea.form-control {
 .product-item {
   margin-bottom: 4rem; /* Adjust this value as needed */
 }
+
+.modal-title {
+  font-weight: bold;
+  color: #d39e00;
+}
+
+.modal-header{
+  background-color: #141414;
+  text-align: center;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px; 
+}
+
+.modal-body{
+  background-color: #141414;
+  border-bottom-right-radius: 10px;
+  border-bottom-left-radius: 10px;
+}
+
+.modal-content{
+  background-color: #141414;
+  border-radius: 10px;
+}
+
+.close{
+  color:white;
+  opacity: 1;
+  border-radius: 10px;
+}
+
+.close span{
+  color:white
+}
+
+input {
+  padding-top: 20px 20px;
+}
+
+#modalButton{
+  background-color:#d39e00;
+}
+
+.modal-dialog{
+  width: auto;
+  height: auto;
+  
+}
