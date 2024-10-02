@@ -58,7 +58,6 @@
       }
     </style>
   </head>
-
   <body>
     <nav
       class="navbar navbar-expand-lg navbar-dark ftco_navbar bg-dark ftco-navbar-light"
@@ -271,7 +270,7 @@
         </div>
       </div>
     </nav>
-    <!-- END nav -->
+    <!-- END nav -->  
     <section class="hero-wrap js-fullheight" style="position: relative">
       <video autoplay loop muted playsinline class="video-background">
         <source src="images/opening-cropped-vid.webm" type="video/webm" />
@@ -314,7 +313,6 @@
         </div>
       </div>
     </section>
-    <section class="ftco-section ftco-section-services bg-light">
       <div class="container-fluid px-md-5">
         <div
           id="carouselServices"
@@ -784,6 +782,66 @@
             closeAllSubmenus();
           }
         });
+      });
+    </script>
+
+
+    <!-- Button trigger modal -->
+    <!--button type="button" class="btn btn-primary" data-toggle="modal" data-target="#anniversaryModal">
+      Open Modal
+    </button-->
+
+    <!-- Anniversary modal -->
+    <div class="modal fade" id="anniversaryModal" tabindex="-1" role="dialog" aria-labelledby="modalCenterTitle" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered" role="document" display:table>
+        <div class="modal-content">
+          <div class="modal-header">
+            <h3 class="modal-title" id="modalTitle">One Year Anniversary Draw  
+              RSVP Now!</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+            
+          </div>
+          <div class="modal-body">
+            <form
+              action="https://formspree.io/tarorarejuvenationyyc@gmail.com"
+              method="post"
+            >
+              <div class="form-group">
+                <input
+                  name ="Name"
+                  type="text"
+                  class="form-control"
+                  placeholder=" Your Name"
+                  required
+                />
+              </div>
+              <div class="form-group">
+                <input
+                  name=" Email/Phone Number"
+                  type="text"
+                  class="form-control"
+                  placeholder=" Email or Phone Number"
+                />
+              </div>
+              <div class="form-group">
+                <input
+                  type="submit"
+                  value="Submit"
+                  class="btn"
+                  id="modalButton"
+                />
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--when page load shows the modal-->
+    <script>
+      $(document).ready(function(){
+        $("#anniversaryModal").modal('show');
       });
     </script>
   </body>
