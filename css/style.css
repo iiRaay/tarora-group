@@ -14143,17 +14143,23 @@ textarea.form-control {
 }
 
 .modal-header{
-  background-color: #141414;
+  background-color: black;
   text-align: center;
   border-top-left-radius: 10px;
   border-top-right-radius: 10px; 
 }
 
 .modal-body{
-  background-color: #141414;
+  background-color: black;
   border-bottom-right-radius: 10px;
   border-bottom-left-radius: 10px;
   overflow-x: auto;
+  
+}
+
+.modal-body img {
+  width: 100%;
+  height: auto;
 }
 
 .modal-content{
@@ -14179,11 +14185,28 @@ input {
   background-color:#d39e00;
 }
 
-@media (max-width: 576px) {
+@media (max-width: 768px) {
   .modal-dialog {
     width: 75%; 
     height: auto;
     margin-left:auto;
     margin-right:auto;
   }
+}
+
+#gif-header{
+  border-bottom: none;
+}
+#gif-body{
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  background-color: #000;
+  width: auto;
+  height: 75%;
+}
+
+#still-dialog{
+  width: 50%;
+  margin: auto
+
 }
