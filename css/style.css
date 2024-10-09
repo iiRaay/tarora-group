@@ -14149,19 +14149,6 @@ textarea.form-control {
   border-top-right-radius: 10px; 
 }
 
-.modal-body{
-  background-color: black;
-  border-bottom-right-radius: 10px;
-  border-bottom-left-radius: 10px;
-  overflow-x: auto;
-  
-}
-
-.modal-body img {
-  width: 100%;
-  height: auto;
-}
-
 .modal-content{
   background-color: #141414;
   border-radius: 10px;
@@ -14185,42 +14172,51 @@ input {
   background-color:#d39e00;
 }
 
-@media (max-width: 768px) {
-  .modal-dialog {
-    width: 75%; 
-    height: auto;
-    margin-left:auto;
-    margin-right:auto;
-  }
+
+
+#gif-dialog{
+  max-width:995px;
+  height:auto;
+  margin: auto;
 }
 
-#gif-header{
-  border-bottom: none;
-}
 #gif-body{
-  border-top-left-radius: 10px;
-  border-top-right-radius: 10px;
-  background-color: #000;
-  width: auto;
-  height: 75%;
+  background-color: black;
+  border-radius: 10px;
+  max-width: 100%;
+  height:auto;
 }
+
+
 
 #still-dialog{
-  width: 50%;
-  height: auto;
-  margin: auto
+  max-width: 50%;
+  height:auto;
+  margin: auto;
+}
+
+#popup-image-container{
+  display: flex;
+  justify-content: center;
+   max-width: 100%;
+}
+
+#popup-image-container img{
+  max-width:50%;
+  height:auto;
 }
 
 @media (max-width: 768px) {
-  #modal-dialog {
-    width: 100%; 
+   #gif-dialog{
+    width: 75%; 
     height: auto;
-    margin-left:auto;
-    margin-right:auto;
+    margin:auto;
+  }
+
+  #still-dialog{
+    max-width: 75%; 
+    height: auto;
+    margin:auto;
   }
 }
 
-#anniversaryModal{
-  margin-left: auto;
-  margin-right: auto;
-}

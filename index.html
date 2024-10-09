@@ -787,32 +787,28 @@
 
     <!--anniversary deal modal-->
     <div class="modal" id="anniversaryModal" tabindex="-1" role="dialog" >
-      <div class="modal-dialog modal-dialog-centered" role="document">
-        <div class="modal-content">
+      <div class="modal-dialog modal-dialog-centered" role="document" id="gif-dialog">
+        <div class="modal-content" >
           <div class="modal-body" id="gif-body">
             <button type="button" class="close" data-dismiss="modal" aria-label="Close">
               <span aria-hidden="true">&times;</span>
             </button>
-            <img id="gif" src="images\popup\anniversary_gif.gif" at="anniversary gif">
+            <img src="images\popup\anniversary.gif" at="anniversary gif">
           </div>
         </div>
       </div>
     </div>
     <!--Images that show after the gif plays once -->
     <div class="modal" id="still-images-popup" tabindex="-1" role="dialog" >
-      <div class="modal-dialog-lg modal-dialog-centered" role="document" id="still-dialog">
+      <div class="modal-dialog modal-dialog-centered" role="document" id="still-dialog">
         <div class="modal-content">
           <div class="modal-body" id="gif-body">
             <button type="button" class="close" data-dismiss="modal" aria-label="Close">
               <span aria-hidden="true">&times;</span>
             </button>
-            <div class="row">
-              <div class="col">
-                <img id="gif-still" src="images\popup\gif_still.png">
-              </div>
-              <div class="col">
-                <img id="draw-still" src="images\popup\draw.png" style = "cursor: pointer;">
-              </div>
+            <div class="image-container" id="popup-image-container">
+              <img id="gif-still" src="images\popup\gif_still.png">
+              <img id="draw-still" src="images\popup\draw.png" style = "cursor: pointer;">
             </div>
           </div>
         </div>
