@@ -14206,6 +14206,9 @@ input {
   height:auto;
 }
 
+#draw-dialog{
+  background-color: black;
+}
 @media (max-width: 768px) {
    #gif-dialog{
     width: 75%; 
