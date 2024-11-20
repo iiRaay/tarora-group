@@ -14177,7 +14177,7 @@ input {
 
 
 #gif-dialog{
-  max-width:600px;
+  max-width:clamp(200px,50%,600px);
   height:auto;
   margin: auto;
 }
@@ -14226,6 +14226,19 @@ input {
     max-width: 75%; 
     height: auto;
     margin:auto;
+  }
+
+  #anniversaryModal{
+    position: fixed;
+    top:50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+  }
+
+  #deal-popup-content img{
+    max-width: 100%;
+    height: auto;
+    
   }
 }
 
