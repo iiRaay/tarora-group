@@ -14177,7 +14177,7 @@ input {
 
 
 #gif-dialog{
-  max-width:clamp(200px,50%,600px);
+  max-width:clamp(200px,50%,500px);
   height:auto;
   margin: auto;
 }
